@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+\usepackage{hyperref}
+\hypersetup{
+        colorlinks,
+            linkcolor={red!50!black},
+                citecolor={blue!50!black},
+                    urlcolor={blue!80!black}
+                }
+
+
+\usepackage[portuguese,english]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage{float}
+\DeclareUnicodeCharacter{202D}{}
+\DeclareUnicodeCharacter{202C}{}
+
+%\usepackage{color} % for the notes
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+%\usepackage{graphicx} % Required for including pictures
+%\usepackage{wrapfig} % Allows in-line images
+%\usepackage{tocloft}
+%\usepackage{multirow}
+
+\usepackage{mathpazo} % Use the Palatino font
+%\usepackage[T1]{fontenc} % Required for accented characters
+%\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+%\usepackage{etoolbox}
+\newcommand{\githubi}{Git\textsc{h}ub}
+\newcommand{\bdoh}{{\sc b}lack {\sc d}uck {\sc o}pen \textsc{hub}}
+\newcommand{\ohloh}{\textsc{o}hloh}
+\newcommand{\php}{\textsc{php}}
+\newcommand{\twitter}{\textsc{t}witter}
+\newcommand{\facebook}{\textsc{f}acebook}
+\newcommand{\msn}{\textsc{msn}}
+\newcommand{\gchat}{\textsc{g}oogle \textsc{c}hat}
+\newcommand{\bash}{\textsc{b}ash}
+\newcommand{\python}{\textsc{p}ython}
+\newcommand{\django}{\textsc{d}jango}
+\newcommand{\curl}{c\textsc{url}}
+\newcommand{\firefox}{\textsc{f}irefox}
+\newcommand{\floss}{\textsc{floss}}
+\newcommand{\openoffice}{\textsc{o}pen\textsc{o}ffice}
+\newcommand{\puredata}{\textsc{p}uredata}
+\newcommand{\schema}{\textsc{s}chema.org}
+\newcommand{\wiki}{\textsc{w}iki}
+\newcommand{\nosql}{\textsc{n}o\textsc{sql}}
+\newcommand{\etherpad}{\textsc{e}therpad}
+\newcommand{\irc}{\textsc{irc}}
+\newcommand{\irci}{\textsc{Irc}}
+\newcommand{\ocd}{\textsc{ocd}}
+\newcommand{\participa}{\textsc{p}articipa.br}
+\newcommand{\httpb}{\textsc{http}}
+\newcommand{\foaf}{\textsc{foaf}}
+\newcommand{\ops}{\textsc{ops}}
+\newcommand{\sioc}{\textsc{sioc}}
+\newcommand{\gndo}{\textsc{gndo}}
+\newcommand{\html}{\textsc{html}}
+\newcommand{\ggg}{\textsc{ggg}}
+\newcommand{\opa}{\textsc{opa}}
+\newcommand{\obs}{\textsc{obs}}
+\newcommand{\vbs}{\textsc{vbs}}
+\newcommand{\lod}{\textsc{lod}}
+\newcommand{\nlp}{\textsc{nlp}}
+\newcommand{\sectionb}{\textsc{s}ection}
+\newcommand{\cn}{\textsc{cn}}
+\newcommand{\aab}{\textsc{aa}}
+\newcommand{\dc}{\textsc{d}ublin {\sc c}ore}
+\newcommand{\json}{\textsc{json}}
+\newcommand{\flask}{\textsc{f}lask}
+\newcommand{\aai}{\textsc{Aa}}
+\newcommand{\ontologiaa}{\textsc{o}ntologi\textsc{aa}}
+\newcommand{\ontologiaai}{\textsc{O}ntologi\textsc{aa}}
+\newcommand{\owl}{{\sc owl}}
+\newcommand{\www}{{\sc www}}
+\newcommand{\rdfi}{{\sc Rdf}}
+\newcommand{\mongodb}{{\sc m}ongo{\sc db}}
+\newcommand{\mysql}{{\sc m}y{\sc sql}}
+\newcommand{\rdf}{{\sc rdf}}
+%\newcommand{\paaineli}{P{\sc aa}inel}
+\newcommand{\paaineli}{P{\bf \sc aa}inel}
+\newcommand{\paainel}{p{\sc aa}inel}
+\newcommand{\gsd}{\textsc{gsd}}
+\newcommand{\ui}{\textsc{ui}}
+%\newcommand{\lmb}{\url{lab\textsc{M}acambira.sf.net}}
+\newcommand{\lm}{lab\textsc{M}acambira.sf.net}
+%\newcommand{\lm}{\url{labMacambira.sf.net}}
+
+
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\usepackage{epigraph}
+%\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{5\p@}}}{}{}
+%\pretocmd{\section}{\addtocontents{toc}{\protect\vspace{-4mm}}}{}{}
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{40pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{30pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%   TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{A simple model that explains why inequality is inevitable and ubiquitous}\\ % Title
+%a natural collective focus\\on the collective being} % Subtitle
+} % Subtitle
+
+\author{\textsc{Renato Fabbri} % Author
+\\{\textit{IFSC/USP, Participa.br/SG-PR, labMacambira.sf.net}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%   ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+%
+\begin{abstract}
+	Inequality has always been a crucial issue for human kind, particularly concerning the highly unequal distribution of wealth, which is at the root of major problems facing humanity, including extreme poverty and wars. A quantitative observation of inequality has become commonplace in recent years with the discovery that many natural as well as man-made systems can be represented as scale-free networks, whose distribution of connectivity obeys a power law. These networks may be generated by the preferential attachment for the nodes, within the so-called rich-gets-richer paradigm. In this letter we introduce a simple model that explains the ubiquity of inequality, based on two simple assumptions applied to a generic system. The first assumption is that the amount of resources in a given input to the system is fixed, as in a conservation law. The second assumption is that the system does not distinguish connectivity in allocating the resources to the components, i.e. there is an uniform distribution of resources to the components with any connectivity whatsoever. This can be exemplified with the distribution of object sizes in a 3D space, where each dimension is assumed to be isotropic. Applying these assumptions to a generic system results in a power-law distribution, whose coefficient is the number of inputs that are independent from each other, i.e. the dimensionsionality of the allocated resources. Even though there is no restriction to the value of the coefficient, in practice we observe that existing systems normally exhibit a coefficient between 1.5 and 3.0. With our simple model it is not possible to determine whether this limitation in the coefficient values arises from a fundamental principle, but there are reasonable hypotheses. The assumptions in the model are analogous to the first and second law of thermodynamics: conservation of resources and a time arrow pointing to inequality. Since these assumptions are easily justified based on established knowledge, the model proves unequivocally that inequality is ubiquitous and inevitable. We also discuss ways to control this tendency to inequality, which is actually analogous to a decrease in entropy in a closed system induced with an external action.
+\end{abstract}
+%
+%{
+%\selectlanguage{portuguese}
+%\begin{abstract}
+%
+%\end{abstract}
+%}
+
+\hspace*{3,6mm}\textit{Keywords:} power laws, fundamental theory, complex systems, complex networks, anthropological physics
+%, statistics % Keywords
+
+%\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%   ESSAY BODY
+%----------------------------------------------------------------------------------------
+%\newpage
+%\tableofcontents
+%\vspace*{1cm}
+%{\bf This is a report on the newborn concept of \emph{anthropological physics}. Further efforts should contextualize, develop and correct theoretical nuances. The sharing of this naive text is a convenient step to the collective maturing and research.}
+%\vspace*{.6cm}
+
+%\newpage
+%\epigraph{A single dramatic incident involving a breach of privacy could produce a set of statutes, rules, and prohibitions that could strangle the nascent field of computational social science in its crib. What is necessary, now, is to produce a self-regulatory regime of procedures, technologies, and rules that reduce this risk but preserve most of the research potential.}{David Lazer, Alex (Sandy) Pentland, Lada Adamic, Sinan Aral, Albert Laszlo Barabasi, Devon Brewer, Nicholas Christakis, Noshir Contractor, James Fowler, Myron Gutmann, Tony Jebara, Gary King, Michael Macy, Deb Roy, and Marshall Van Alstyne~\cite{life}}
+
+\section{Introduction to inequality in power laws such as Zipf or Pareto}
+\section{Examples}
+\subsection{Workers in a factory}
+Let us consider a generic problem in which a System (S) provides an Output (O) depending on the Input (I) it receives. The following assumptions are established.
+1) The System S is made of a number of components that are not all equal to each other. That is to say, there is diversity in the nature of the components. 
+2) There may be several inputs, but for each input the amount of resources furnished to the System is fixed, as in a conservation law. 
+3) Distribution should be uniform with regard to the “size” of the component as in a geometric case where space is considered as isotropic. 
+
+There is no assumption for the Output (O), which is taken as to mean the performance (or richness) in terms of the components of S. 
+Now assuming that there are N types of input, and for the sake of the argument, all of them have a time dependence (with 1/t), according to assumption 2) above. The Output is the product of the functions of these N inputs. 
+O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
+The Output has therefore a power-law dependence on t with coefficient N. 
+Now considering the values of N observed in practice (from many examples of power-law dependences), which is normally between 1.5 (2?) and 3, one infers that there are at least two types (?) of independent inputs and at maximum 3 independent inputs. 
+Let us illustrate with a hypothetical case that may facilitate understanding the concepts. A piece of work is to be done in a company. What sort of resources can be established as inputs? We assume three inputs: number of workers, working hours and efficiency. We recall that all resources should be fixed and that there is diversity in the components. 
+Then, first the total number of workers available are divided into groups of different sizes,
+Continuar exemplo ????
+
+Falta resumir a literatura que mostra coeficiente entre 1.5 e 3. Mencionar casos em que é maior que 3.
+Incluir exemplos em que a distribuição uniforme se dá, mesmo que sejam empíricos. Lembro que você tinha isso para lista de e-mails, e acho que outros exemplos com maior apelo para a física precisariam ser incluídos.
+
+
+\subsection{Object sizes in your house or elsewhere}
+
+Que estah interessado na sua casa em objetos de dois tamanhos: um quase do tamanho de um cubo unitario (seja qual for a unidade q vc escolher); e outro quase do tamanho l (l inteiro e maior q um). Em cada cubo unitario ha rho de chance de ter um objeto com o tamanho almejado. Nos cubos  de lado l tb. Dado um cubo de lado n (l divide n) ha, em media, rho . $(n/l)^3$ objetos de volume $~l^3$ e $\rho . n^3$ objetos de volume $~1^3$. Ou seja, a frequencia de objetos com volume X eh inversamente proporcional ao volume X.
+
+\section{Formalization}
+\subsection{Axioms and immediate consequences}
+% corollaries, lemmas, etc
+\subsection{Phenomenological approach}
+% pure mathematical interpretation of the power law
+
+Let k denote the amount of edges allocated by each vertex, its degree. We know that scale-free networks follows a power law distribution of degree p(k), in the form $p(k)=C/k^{-\alpha}$ with C a constant. Our understanding is that this distribution stems from an equanimous distribution of resources in $\alpha$ dimensions, in a manner that resembles wave theory.
+
+For a moment, regard $p(k)$ as the frequency of occurance $f$. Regard $k$ as the amount of resource, now the time period $\lambda$. If there is no change of medium, the wave travels at a constant rate $v=\lambda . f$. Recal $p(k) = C / k^\alpha$. Accordingly, we can observe $f = v / \lambda$ and that, in this case, $v = C$ and $\alpha = 1$.
+
+Now let $f=v/(\lambda_1 . \lambda_2)$, that is, the frequency of occurance (or the probability of choosing such event at random) go with the inverse of two periods. We advocate that this is the similar case of that where edges reflect the resources allocated by individuals. If $f=v/resources_i=v/E_i=v/(N_i . (E_i/N_i))=2v/(N_i . k_i) \equiv v / (\lambda_1 .   \lambda_2)$. As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the primary resource, one can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$. E.g. in a social network, the number of agents allocated and the time each of them put, are seen as the primary resource (individual . time).
+
+Questions:
+*) the range of degree covered by scale-free networks is maximum, as do our perception, which also follows power laws. How far can we consider scale-free complex networks to be meta-sensors that captures and processes signals about the very reason of existance of the meta-sensor?
+
+Theorem 1: every scale-free network with distribution of degree $p(k)=C/k^\alpha$ can be understood as having an equanimous distribution of resources in $\alpha$ dimensions.
+Corolary: if $p(E_i)=C/E_i$, with $\alpha=1$. (might have to consider only edges with vertices of other connectivity, i.e. discard edges between vertices with same degree.)
+
+
+
+\subsection{Scale free complex networks}
+% proposta de recursos = E ~ k . N para a lei de potência em sistemas reais
+\section{Conclusions}
+\subsection*{Acknowledgments}
+Authors thank
+the General Secretariat of the Republic Presidency (SG-PR) and UNDP for supporting this
+research (contract 2013/00056, project BRA/12/018); the National Counsel of Technological 
+and Scientific Development (process 140860/2013-4, project 870336/1997-5,
+advisor: 
+all
+labMacambira.sf.net members for pursuing this and other developments;
+%----------------------------------------------------------------------------------------
+%   BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{unsrt}
+%\bibliographystyle{plain}
+\bibliographystyle{ieeetr}
+\bibliography{essay}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
