@@ -47,6 +47,26 @@
 %\usepackage[T1]{fontenc} % Required for accented characters
 %\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
 %\usepackage{etoolbox}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+	\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+	\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+	\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+	\newcommand{\qed}{\nobreak \ifvmode \relax \else
+		      \ifdim\lastskip<1.5em \hskip-\lastskip
+		            \hskip1.5em plus0em minus0.5em \fi \nobreak
+			          \vrule height0.75em width0.5em depth0.25em\fi}
 \newcommand{\githubi}{Git\textsc{h}ub}
 \newcommand{\bdoh}{{\sc b}lack {\sc d}uck {\sc o}pen \textsc{hub}}
 \newcommand{\ohloh}{\textsc{o}hloh}
@@ -195,7 +215,7 @@
 %\newpage
 %\epigraph{A single dramatic incident involving a breach of privacy could produce a set of statutes, rules, and prohibitions that could strangle the nascent field of computational social science in its crib. What is necessary, now, is to produce a self-regulatory regime of procedures, technologies, and rules that reduce this risk but preserve most of the research potential.}{David Lazer, Alex (Sandy) Pentland, Lada Adamic, Sinan Aral, Albert Laszlo Barabasi, Devon Brewer, Nicholas Christakis, Noshir Contractor, James Fowler, Myron Gutmann, Tony Jebara, Gary King, Michael Macy, Deb Roy, and Marshall Van Alstyne~\cite{life}}
 
-\section{Introduction to inequality in power laws such as Zipf or Pareto}
+\section{Introduction to inequality in power laws such as Zipf and Pareto}
 A power law is a functional relationship between two quantities $P(k)$ and $k$ in the form:
 \begin{equation}
 P(k) = Ck^{-\alpha}
@@ -209,24 +229,24 @@ C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
 \noindent Often, $k_R\rightarrow \infty$ which implies $\alpha>1$ as a condition for convergence of $P(k)$.
 In such cases, the power law has a well-defined mean only if $\alpha>1$,
 a finite variance only when $\alpha>2$. Well-defined skewness and kurtosis are restricted
-to the cases where $\alpha>3$ and $\alpha>4$.
+to the cases where $\alpha>3$ and $\alpha>4$ respectively.
 
 In nearly all systems, power laws are observed through both theory and empirical data.
 Of special interest in the last decades are the scale-free complex networks,
 the basic characteristic of which is a power law distribution of connectivity (number of edges per node).
 Power laws also govern perception, as exposed by the general Webner-Fechner and Stevens laws.
 As a rule of thumb, the distribution of resources among (often self-interested) components
-tends to present power laws,
+tends to follow a power law,
 which includes distribution of human wealth, interactions, friendships;
-airport connections, neuronal synaptic count.
+connections among airports, synaptic count among neurons.
 Some advocate 
-about a better fit and theoretical backbone for the superimposition of a
+about a better fit and theoretical backbone for the superposition of a
  power law distribution and a Weibull distribution~\cite{powWeib}.
  Most canonical examples in literature seem to be earthquake intensity and allometric relations of animal bodies,
  most canonical laws seem to be Pareto and Zipf laws.
 
 
-\section{Examples}
+\section{Paradigmatic examples}
 \subsection{Workers in a factory}
 Let us consider a generic problem in which a System (S) provides an Output (O) depending on the Input (I) it receives. The following assumptions are established.
 1) The System S is made of a number of components that are not all equal to each other. That is to say, there is diversity in the nature of the components. 
@@ -251,11 +271,43 @@ Incluir exemplos em que a distribuição uniforme se dá, mesmo que sejam empír
 Que estah interessado na sua casa em objetos de dois tamanhos: um quase do tamanho de um cubo unitario (seja qual for a unidade q vc escolher); e outro quase do tamanho l (l inteiro e maior q um). Em cada cubo unitario ha rho de chance de ter um objeto com o tamanho almejado. Nos cubos  de lado l tb. Dado um cubo de lado n (l divide n) ha, em media, rho . $(n/l)^3$ objetos de volume $~l^3$ e $\rho . n^3$ objetos de volume $~1^3$. Ou seja, a frequencia de objetos com volume X eh inversamente proporcional ao volume X.
 
 \section{Formalization}
-\subsection{Axioms and immediate consequences}
+\begin{definition}
+	A resource-based system is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system, often expressed as a power law.
+\end{definition}
+
+\subsection{Propositions and immediate consequences}
 % corollaries, lemmas, etc
+
+\begin{proposition}
+	There is diversity among the components the resource-based system.
+\end{proposition}
+
+\begin{proposition}
+	In allocating resources, a resource-based system does not distinguish the resources already allocated per component, expressed in an uniform distribution $p(k)$ of resources $k$.
+\end{proposition}
+
+\begin{corollary}
+	The extension of allocation is $[0,\infty]$
+\end{corollary}
+
+\begin{corollary}
+	For a system with a finite quantity of resources,
+	the allocation is compact with a superior limit $k_2$.
+\end{corollary}
+
+\begin{corollary}
+	The superior limit $k_2$ of allocation of resources is an estimate of the amount of resources equally distributed along component wealth.
+\end{corollary}
+
+\begin{corollary}
+	The dimensionality of the allocated resources is the scaling factor $\alpha$.
+\end{corollary}
+
+
+
+
 \subsection{Phenomenological approach}
 % pure mathematical interpretation of the power law
-
 Let k denote the amount of edges allocated by each vertex, its degree. We know that scale-free networks follows a power law distribution of degree p(k), in the form $p(k)=C/k^{-\alpha}$ with C a constant. Our understanding is that this distribution stems from an equanimous distribution of resources in $\alpha$ dimensions, in a manner that resembles wave theory.
 
 For a moment, regard $p(k)$ as the frequency of occurance $f$. Regard $k$ as the amount of resource, now the time period $\lambda$. If there is no change of medium, the wave travels at a constant rate $v=\lambda . f$. Recal $p(k) = C / k^\alpha$. Accordingly, we can observe $f = v / \lambda$ and that, in this case, $v = C$ and $\alpha = 1$.
@@ -263,9 +315,8 @@ For a moment, regard $p(k)$ as the frequency of occurance $f$. Regard $k$ as the
 Now let $f=v/(\lambda_1 . \lambda_2)$, that is, the frequency of occurance (or the probability of choosing such event at random) go with the inverse of two periods. 
 
 
+\section{Special cases}
 \subsection{Scale free complex networks}
-% proposta de recursos = E ~ k . N para a lei de potência em sistemas reais
-
 We advocate that this is the similar case of that where edges reflect the resources allocated by individuals. If $f=v/resources_i=v/E_i=v/(N_i . (E_i/N_i))=2v/(N_i . k_i) \equiv v / (\lambda_1 .   \lambda_2)$. As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the primary resource, one can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$. E.g. in a social network, the number of agents allocated and the time each of them put, are seen as the primary resource (individual . time).
 
 Questions:
@@ -273,6 +324,13 @@ Questions:
 
 Theorem 1: every scale-free network with distribution of degree $p(k)=C/k^\alpha$ can be understood as having an equanimous distribution of resources in $\alpha$ dimensions.
 Corolary: if $p(E_i)=C/E_i$, with $\alpha=1$. (might have to consider only edges with vertices of other connectivity, i.e. discard edges between vertices with same degree.)
+
+
+
+\subsection{Wealth distribution}
+\subsection{Equanimous inequality}
+\subsection{Naturalization of inequality}
+% proposta de recursos = E ~ k . N para a lei de potência em sistemas reais
 
 \section{Conclusions}
 \subsection*{Acknowledgments}
