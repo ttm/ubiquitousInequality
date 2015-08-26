@@ -54,6 +54,7 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 
+
 \newenvironment{proof}[1][Proof]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 	\newenvironment{definition}[1][Definition]{\begin{trivlist}
@@ -257,23 +258,40 @@ about a better fit and theoretical backbone for the superposition of a
 Power laws. See at least~\cite{part,pbook}.
 
 \section{Formalization}\label{sec:form}
+
 \begin{definition}
 	A resource-based system is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system, often expressed as a power law.
 \end{definition}
 
+\begin{definition}
+	Component wealth is the amount of resources $k$ allocated to the component.
+\end{definition}
+
+We will use $p(k)$ to denote the number of components with component wealth $k$.
+
 \subsection{Propositions and corollaries}
 % corollaries, lemmas, etc
+
+
 \begin{proposition}
-	The amount of each resource input to the system is fixed.
+	There is diversity among the components of the resource-based system. (Zeroth law.)
+\end{proposition}
+
+This 
+
+\begin{proposition}
+	The amount of each resource input to the system is fixed. (First law.)
+\end{proposition}
+\begin{proposition}
+	In allocating resources, a resource-based system does not distinguish the resources already allocated per component, expressed as an uniform distribution $p_U(k)$ of resources $k$. (Second law.)
 \end{proposition}
 
 \begin{proposition}
-	There is diversity among the components of the resource-based system.
+	The ground state implied by the continuous presence of the second law is characterized by
+	a power-law distribution $p(k)$ of components with an amount $k$ of resources each. Deviations from $p(k)$ tend to be transient or require effort, the expense of energy, such as work. (Third law.)
 \end{proposition}
 
-\begin{proposition}
-	In allocating resources, a resource-based system does not distinguish the resources already allocated per component, expressed as an uniform distribution $p(k)$ of resources $k$.
-\end{proposition}
+
 
 \begin{corollary}
 	The extension of allocation is $[0,\infty]$
@@ -287,6 +305,17 @@ Power laws. See at least~\cite{part,pbook}.
 \begin{corollary}
 	The superior limit $k_2$ of the observed allocation of resources is an estimate of the amount of resources equally distributed along component wealth.
 \end{corollary}
+
+\begin{corollary}
+	The superior limit $k_2$ of the observed allocation of resources is an estimate of the amount of resources equally distributed along component wealth.
+\end{corollary}
+
+
+\begin{corollary}
+	$p(1)$ is another estimate of the amount of resources $C$ equally distributed along component wealth.
+\end{corollary}
+
+
 
 \begin{corollary}
 	The dimensionality of the allocated resources is the scaling factor $\alpha$.
@@ -348,8 +377,8 @@ hypothesis for the nature of dark matter.
 \section{Paradigmatic examples}
 \subsection{Workers in a factory}
 Let us consider a generic problem in which a System ($S$) provides an Output ($O$) depending on the Input ($I$) it receives. The following assumptions are established.
+1) There may be several inputs, but for each input the amount of resources furnished to the System is fixed, as in a conservation law. 
 1) $S$ is made of a number of components that are not all equal to each other. That is to say, there is diversity in the nature of the components. 
-2) There may be several inputs, but for each input the amount of resources furnished to the System is fixed, as in a conservation law. 
 3) Distribution should be uniform with regard to the “size” of the component as in a geometric case where space is considered as isotropic. 
 
 There is no assumption for the Output (O), which is taken as to mean the performance (or richness) in terms of the components of S. 
