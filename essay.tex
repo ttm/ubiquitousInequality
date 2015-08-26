@@ -218,8 +218,20 @@
 %\epigraph{A single dramatic incident involving a breach of privacy could produce a set of statutes, rules, and prohibitions that could strangle the nascent field of computational social science in its crib. What is necessary, now, is to produce a self-regulatory regime of procedures, technologies, and rules that reduce this risk but preserve most of the research potential.}{David Lazer, Alex (Sandy) Pentland, Lada Adamic, Sinan Aral, Albert Laszlo Barabasi, Devon Brewer, Nicholas Christakis, Noshir Contractor, James Fowler, Myron Gutmann, Tony Jebara, Gary King, Michael Macy, Deb Roy, and Marshall Van Alstyne~\cite{life}}
 
 \section{Introduction}
+Symmetry, and its symmetric twin, asymmetry, or inequality,
+is regarded as fundamental to cognition and the universal laws
+in nearly all fields, emanating from physics and philosophy.
+The ubiquity of symmetry is appreciated so profoundly that
+literature constantly recapitulates that the human mind present
+explicit and basic symmetry operations through thinking.
+Being the way our mind works, we model the world with symmetry
+regardless if the world present those symmetries.
+Models are useful, and the symmetry observed through scientific
+means are believed to reflect reality, but it is also foreseen
+that new knowledge should spout from a somewhat different paradigm.
+
 In this letter, we present inequality as resulting from
-an  uniform distribution of resources with
+an uniform distribution of resources with
 respect to the resources already allocated to each component.
 
 
@@ -267,29 +279,54 @@ Power laws. See at least~\cite{part,pbook}.
 	Component wealth is the amount of resources $k$ allocated to the component.
 \end{definition}
 
-We will use $p(k)$ to denote the number of components with component wealth $k$.
+We will use $p(k)$ to denote the fraction of components with component wealth $k$. Likewise, the same notation $p(k)$ will denote the probability of choosing a component with an amount $k$ of resources.
+The context should make it clear which is the appropriate meaning.
+This symmetry among probability, frequency and relative count is
+instrumental for the interpretative framework herein presented,
+which is conveniently present in the notation.
 
 \subsection{Propositions and corollaries}
 % corollaries, lemmas, etc
 
+Inspired in the laws of thermodynamics, we derived four
+propositions.
+These principles can be though of as laws met in
+a very broad class.
+These propositions follow from the complexity of the system:
+there is so much involved, that the ignorance is assured and
+one needs to grasp hardly false assumptions. 
+This leads to:
 
-\begin{proposition}
+
+\begin{proposition}\label{prop:0}
 	There is diversity among the components of the resource-based system. (Zeroth law.)
 \end{proposition}
 
-This 
+If there is a big set of components, there is hardly any way to avoid diversity. Be it location, size, age, the way someone regards them, etc., distinctions arise (as do symmetry). This can be regarded as both a statistical law, as a need for consideration: if a collection of objects is being considered by someone, they were put in some order or another system in which they differ.
 
 \begin{proposition}
 	The amount of each resource input to the system is fixed. (First law.)
 \end{proposition}
+
+This follows from the independence of each resource dimension,
+say $\lambda_1$ and $\lambda_2$, and
+the multiplicative relation they hold with the total resource $E=\lambda_1 . \lambda_2$.
+
 \begin{proposition}
-	In allocating resources, a resource-based system does not distinguish the resources already allocated per component, expressed as an uniform distribution $p_U(k)$ of resources $k$. (Second law.)
+	In allocating resources, a resource-based system does not distinguish the resources already allocated per component. This is expressed as an uniform distribution $p_U(k)$ of resources $k$. (Second law.)
 \end{proposition}
+
+That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is preserved; 2) the wealthier the components considered, the fewer they are. 
 
 \begin{proposition}
 	The ground state implied by the continuous presence of the second law is characterized by
-	a power-law distribution $p(k)$ of components with an amount $k$ of resources each. Deviations from $p(k)$ tend to be transient or require effort, the expense of energy, such as work. (Third law.)
+	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expense of energy, such as work, or be imposed by hash conditions. (Third law.)
 \end{proposition}
+
+This follows from second law. As the system continues to exist,
+and resources are continually allocated, 
+
+Proposition~\ref{prop:0} is required for the attribution of different amount of resources for each component. If they are equal, by definition they have the same component wealth.
 
 
 
@@ -334,8 +371,9 @@ Are the conceptualization
 presented above axiomatically still helpful?
 We provide here a general and mathematically grounded
 interpretation of any power law relationship,
-perfectly consonant with such assumptions
-that suggested and sustained them to present time.
+perfectly consonant with such assumptions.
+We understand that this short theoretical consideration
+suggests, sustains and deepen them.
 
 Consider a constant speed $v$ for a wave propagation
 (suppose linear media with no dispersion),
