@@ -51,10 +51,12 @@
 %\newtheorem{theorem}{Theorem}[section]
 \newtheorem{theorem}{Theorem}
 \newtheorem{theorem2}{Theorem}
+\newtheorem{theorem3}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{axiom}[theorem]{Axiom}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem2]{Corollary}
+\newtheorem{definition2}[theorem3]{Definition}
 
 
 \newenvironment{proof}[1][Proof]{\begin{trivlist}
@@ -273,15 +275,15 @@ Power laws. See at least~\cite{part,pbook}.
 
 \section{Formalization}\label{sec:form}
 
-\begin{definition}
-	A resource is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of the complex system considered.
-\end{definition}
+\begin{definition2}
+	A {\bf resource} is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of the complex system considered.
+\end{definition2}
 
  Usually, the complex system is located roughly through its components and the resources that keep the system altogether.
 
-\begin{definition}
-	A resource-based system is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system.
-\end{definition}
+\begin{definition2}
+	A {\bf resource-based system} is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system.
+\end{definition2}
 
 Specially in Game Theory, these components are often considered
 ``self-interested''. This is not part of our definition and
@@ -291,9 +293,9 @@ in the reasons and way that self-interested agents
 organize themselves
 with extensive incidence of power-laws.
 
-\begin{definition}
-	Component wealth $k$ is the amount of resources allocated to the component.
-\end{definition}
+\begin{definition2}
+	The {\bf component wealth} $k$ is the amount of resources allocated to the component.
+\end{definition2}
 
 We will use $p(k)$ to denote the fraction of components with component wealth $k$. Likewise, the same notation $p(k)$ will denote the probability of choosing a component with an amount $k$ of resources.
 The context should make it clear which is the appropriate meaning.
@@ -454,19 +456,21 @@ and assume linearity $\lambda_{1,i}=c.\lambda_{2,1}$,
 such that
 $p(k_i)=\frac{C}{C_i}=\frac{C}{\lambda_{1,i}.\lambda_{2,i}}=
 \frac{C}{c\lambda_{2,i}^2}=\frac{\widetilde{C}}{\lambda_{2,i}^2}\equiv\frac{v}{\lambda^2}$.
-Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment democratically across resource per component (for the complex system being observed in which there is a power law). All kinds of nonlinearity should account
-for all kinds of deviations in empirical reports of power laws.
+Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment uniformly across component wealth: the higher component wealth implies less numerous components. 
+All sorts of nonlinearity should account
+for many kinds of deviations in empirical power laws.
 
-Curiously enough, such interpretation seems to hold for 
+Such interpretation holds for 
 both wave and probabilistic phenomena.
 This suggests that further mathematical
-parallels might be possible and useful in understanding complex
-systems through thermodynamics processes.
+parallels might be useful in understanding complex
+systems, be it through thermodynamic, wave or quantum theories.
 It is not yet clear to which extent does this correspondence hold true,
 but one might glimpse diverse severe hypothesis,
-such as the attribution of energy to complex systems
-(cohesion and information embodiment?) and 
-about the nature of dark matter.
+such as a lower bound for the energy involved in the integration of
+the components into a complex system.
+Would such energy account for part of the phenomena
+currently explained through dark matter assumptions?
 
 \section{Paradigmatic examples}
 \subsection{Workers in a factory}
