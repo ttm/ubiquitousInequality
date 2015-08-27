@@ -237,7 +237,7 @@ respect to the resources already allocated to each component.
 
 \subsection{Power laws such as Zipf and Pareto}
 A power law is a functional relationship between two quantities $P(k)$ and $k$ in the form:
-\begin{equation}
+\begin{equation}\label{eq:pow}
 P(k) = Ck^{-\alpha}
 \end{equation}
 \noindent where $k\in [k_L,k_R]$
@@ -309,7 +309,7 @@ frequency of occurrence.
 Inspired in the laws of thermodynamics, we derived four
 propositions.
 These principles can be though of as laws met in
-a very broad class.
+a very broad class of phenomena.
 These propositions follow from the complexity of the system:
 there is so much involved, that the ignorance is assured and
 one needs to grasp hardly false assumptions. 
@@ -317,44 +317,67 @@ This leads to:
 
 
 \begin{proposition}\label{prop:0}
-	There is diversity among the components of the resource-based system. (Zeroth law.)
+	There is diversity among the components of the resource-based system. (Zeroth law)
 \end{proposition}
 
-If there is a big set of components, there is hardly any way to avoid diversity. Be it location, size, age, the way someone regards them, etc., distinctions arise (as do symmetry). This can be regarded as both a statistical law, as a need for consideration: if a collection of objects is being considered by someone, they were put in some order or another system in which they differ.
+If there is a big set of components, there is hardly any way to avoid diversity. Be it location, size, age, the way someone regards them, etc., distinctions arise (as do symmetry). This can be regarded as both a statistical law, or even as a deeper truth.
+The mere existence of two objects imposes diversity,
+otherwise they would be both the same.
 
-Proposition~\ref{prop:0} is required for the attribution of different amount of resources for each component and such as derived from a power law. 
-The proof is by absurd: if they are equal, by definition they have the same component wealth.
+Proposition~\ref{prop:0} is required for the attribution of different amounts of resources for each component:
+if they are equal, by definition they have the same component wealth.
 
-\begin{proposition}
-	The amount of each resource input to the system is fixed. (First law.)
+\begin{proposition}\label{prop:1}
+	The amount of each resource input to the system is fixed. (First law)
 \end{proposition}
 
 This follows from the independence of each resource dimension,
 say $\lambda_1$ and $\lambda_2$, and
 the multiplicative relation they hold with the total resource $E=\lambda_1 . \lambda_2$. Next section holds this discussion more throughly.
 
-\begin{proposition}
-	In allocating resources, a resource-based system does not distinguish the resources already allocated per component. This is expressed as an uniform distribution $p_U(k)$ of resources $k$. (Second law.)
+\begin{proposition}\label{prop:2}
+	In allocating resources, a resource-based system does not distinguish the resources already allocated in the components. This is expressed as an uniform distribution $p_U(k)$ of resources with respect to component wealth $k$. (Second law)
 \end{proposition}
 
 That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is maximized; 2) the wealthier the components considered, the fewer they are. 
 
-\begin{proposition}
-	The ground state implied by the continuous presence of the second law is characterized by
-	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to lower entropy), or be imposed by hash conditions (such as an apple that does not fall if stuck in the ceiling). (Third law.)
+\begin{proposition}\label{prop:3}
+	The ground state implied by the everlasting validity of the second law is characterized by
+	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling). (Third law.)
 \end{proposition}
 
-This follows from the second law. As the system continues to exist,
+This follows from the second law and the definition of $k$:
+$p(k)=\frac{p_U(k)}{k^\alpha}$, where $\alpha$ is
+the dimensionality of the resource.
+As the system continues to exist,
 and resources are continually allocated, deviations from the equanimous
 distribution $p_U(k)$ of resources along component wealth $k$,
  tend to be transient.
- Notice that $p_U(k)$ is usually observed through 
+ Notice that $p_U(k)$ is usually not observed, but only through 
  the power-law distribution $p(k)$ of components
 with component wealth $k$.
 
 \begin{corollary}
-The extension of allocation is $(R_L,\infty]$ with $R_L$ often 0 or 1.
+	The extension of allocation is $[k_L,k_R]$ with $R_L$ often 0 or 1 and $k_R\approx C$.
 \end{corollary}
+
+This follows from Proposition~\ref{prop:2}.
+If the allocation of resources is insensitive to component wealth,
+it should sweep all possible values, and these are usually
+bounded bellow by being a positive quantity of resources.
+Most usually, systems are considered as a set of components
+or the components in which certain resources couple them,
+in which $k_L=0$ and $K_R=1$ are reasonable, respectively.
+
+The distributions $p(k)$ and $p_U(k)$ are also
+bounded above when component wealth reaches $k_R \approx C$,
+the amount of resources uniformly distributed along component wealth.
+In empirical data, $k_R$ can vary considerably, due to
+nonlinearity of the resources scaling (most often $k_R<C$) and
+to self-interested agents (most often $k_R>C$).
+Power laws are reported to conduct empirical data sovereignly and
+paradoxically they most often are strict only for a
+(broad) portion of component wealth range.
 
 %\begin{corollary}
 %	For a system with a finite quantity of resources,
@@ -362,7 +385,7 @@ The extension of allocation is $(R_L,\infty]$ with $R_L$ often 0 or 1.
 %\end{corollary}
 
 \begin{corollary}
-	The superior limit $k_2$ of the observed allocation of resources is an estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx k_2$).
+	The superior limit $k_R$ of the observed allocation of resources is an estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx k_2$).
 \end{corollary}
 
 \begin{corollary}
@@ -370,17 +393,27 @@ The extension of allocation is $(R_L,\infty]$ with $R_L$ often 0 or 1.
 \end{corollary}
 
 \begin{corollary}
+	An estimate for $C$ can also be found by $\alpha$, $k_L$ and $k_R$ through Equation~\ref{eq:pow}.
+\end{corollary}
+
+\begin{corollary}
 	The dimensionality of the allocated resources is the scaling factor $\alpha$.
 \end{corollary}
+
+This last corollary follows from box counting or, most easily,
+through wave-like reasoning about power laws,
+the excursion of the next section.
 
 \subsection{Phenomenological approach}
 % pure mathematical interpretation of the power law
 
-Doubt propositions \ref{} and \ref{}, lets look at data
-or a descriptive model.
-Suppose you have a power law observation in empirical data
-or driven from theory.
-Are the conceptualization
+We shall also
+doubt propositions~\ref{prop:0},~\ref{prop:1},~\ref{prop:2},~\ref{prop:3}
+and depart from a more phenomenological standpoint,
+such as data and descriptive models.
+Suppose there is a power law relation in empirical data
+or driven from specific domain theory.
+Is the conceptualization
 presented above axiomatically still helpful?
 We provide here a general and mathematically grounded
 interpretation of any power law relationship,
