@@ -272,18 +272,36 @@ Power laws. See at least~\cite{part,pbook}.
 \section{Formalization}\label{sec:form}
 
 \begin{definition}
-	A resource-based system is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system, often expressed as a power law.
+	A resource is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of the complex system considered.
 \end{definition}
 
+ Usually, the complex system is located roughly through its components and the resources that keep the system altogether.
+
 \begin{definition}
-	Component wealth is the amount of resources $k$ allocated to the component.
+	A resource-based system is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system.
+\end{definition}
+
+Specially in Game Theory, these components are often considered
+``self-interested''. This is not part of our definition and
+is not a required condition for the framework here presented.
+Even so, we understand that this formalization shed insight
+in the reasons and way that self-interested agents
+organize themselves
+with extensive incidence of power-laws.
+
+\begin{definition}
+	Component wealth $k$ is the amount of resources allocated to the component.
 \end{definition}
 
 We will use $p(k)$ to denote the fraction of components with component wealth $k$. Likewise, the same notation $p(k)$ will denote the probability of choosing a component with an amount $k$ of resources.
 The context should make it clear which is the appropriate meaning.
 This symmetry among probability, frequency and relative count is
 instrumental for the interpretative framework herein presented,
-which is conveniently present in the notation.
+which is conveniently embedded in the notation.
+It is also useful to observe 
+$k$ as $\lambda$, i.e. as a wave period.
+Then, $p(k)$ is understood as  $f$, the
+frequency of occurrence.
 
 \subsection{Propositions and corollaries}
 % corollaries, lemmas, etc
@@ -319,14 +337,14 @@ the multiplicative relation they hold with the total resource $E=\lambda_1 . \la
 	In allocating resources, a resource-based system does not distinguish the resources already allocated per component. This is expressed as an uniform distribution $p_U(k)$ of resources $k$. (Second law.)
 \end{proposition}
 
-That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is preserved; 2) the wealthier the components considered, the fewer they are. 
+That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is maximized; 2) the wealthier the components considered, the fewer they are. 
 
 \begin{proposition}
 	The ground state implied by the continuous presence of the second law is characterized by
-	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expense of energy, such as work, or be imposed by hash conditions. (Third law.)
+	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to lower entropy), or be imposed by hash conditions (such as an apple that does not fall if stuck in the ceiling). (Third law.)
 \end{proposition}
 
-This follows from second law. As the system continues to exist,
+This follows from the second law. As the system continues to exist,
 and resources are continually allocated, deviations from the equanimous
 distribution $p_U(k)$ of resources along component wealth $k$,
  tend to be transient.
@@ -335,7 +353,7 @@ distribution $p_U(k)$ of resources along component wealth $k$,
 with component wealth $k$.
 
 \begin{corollary}
-	The extension of allocation is $[0,\infty]$
+The extension of allocation is $(R_L,\infty]$ with $R_L$ often 0 or 1.
 \end{corollary}
 
 %\begin{corollary}
@@ -344,15 +362,11 @@ with component wealth $k$.
 %\end{corollary}
 
 \begin{corollary}
-	The superior limit $k_2$ of the observed allocation of resources is an estimate of the amount of resources equally distributed along component wealth.
+	The superior limit $k_2$ of the observed allocation of resources is an estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx k_2$).
 \end{corollary}
 
 \begin{corollary}
-	The superior limit $k_2$ of the observed allocation of resources is an estimate of the amount of resources equally distributed along component wealth.
-\end{corollary}
-
-\begin{corollary}
-	$p(1)$ is another estimate of the amount of resources $C$ equally distributed along component wealth.
+	$p(1)$ is another estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx p(1)$).
 \end{corollary}
 
 \begin{corollary}
@@ -362,7 +376,8 @@ with component wealth $k$.
 \subsection{Phenomenological approach}
 % pure mathematical interpretation of the power law
 
-Doubt propositions \ref{} and \ref{}.
+Doubt propositions \ref{} and \ref{}, lets look at data
+or a descriptive model.
 Suppose you have a power law observation in empirical data
 or driven from theory.
 Are the conceptualization
@@ -374,8 +389,8 @@ We understand that this short theoretical consideration
 suggests, sustains and deepen them.
 
 Consider a constant speed $v$ for a wave propagation
-(suppose linear media with no dispersion),
-the number of oscillations $f$ per unit time is
+(suppose linear media with no dispersion).
+Recall that the number of oscillations $f$ per unit time is
 inversely proportional to the cycle length $\lambda$ (the period).
 In usual notation $f=\frac{v}{\lambda}$.
 The constant speed $v$ implies a power law between 
@@ -384,7 +399,8 @@ Similarly, the general case of a power law can
 be interpreted as resulting from a constant amount of
 fundamental resources $C$ with dimensionality $\alpha$ 
 being homogeneously distributed across
-``resources per component'' $k$ resulting in $p(k)$ of such components.
+``resources per component'' $k$ and 
+resulting in $p(k)$ of such components.
 
 Now let $f=\frac{v}{\lambda_1 . \lambda_2}$, that is,
 the frequency of occurrence
@@ -403,7 +419,9 @@ $p(k_i)=\frac{C}{C_i}=\frac{C}{\lambda_{1,i}.\lambda_{2,i}}=
 \frac{C}{c\lambda_{2,i}^2}=\frac{\widetilde{C}}{\lambda_{2,i}^2}\equiv\frac{v}{\lambda^2}$.
 Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment democratically across resource per component (for the complex system being observed in which there is a power law).
 
-Curiously enough, such interpretation seem to hold for both wave and probabilistic phenomena. This suggests that further mathematical
+Curiously enough, such interpretation seems to hold for 
+both wave and probabilistic phenomena.
+This suggests that further mathematical
 parallels might be possible and useful in understanding complex
 systems through thermodynamics processes.
 One might glimpse the attribution of energy to complex systems
@@ -455,7 +473,7 @@ relations between
 magnitude of the physical stimulus and the perceived 
 (subjective) quantity~\cite{stev,web}.
 This is usually attributed to the utility of perception capability,
-which is considerably enhanced upon broadening of the spectrum.
+which is enhanced upon broadening of the spectrum.
 Another explanation is on the physical phenomena itself.
 Consider a sound wave traveling with constant speed $v$.
 If the organism will consider wave lengths from $\lambda_1$
