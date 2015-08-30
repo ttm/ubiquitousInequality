@@ -331,6 +331,12 @@ otherwise they would be both the same.
 Proposition~\ref{prop:0} is required for the attribution of different amounts of resources for each component:
 if they are equal, by definition they have the same component wealth.
 
+\begin{proposition}\label{prop:2}
+	In allocating resources, a resource-based system does not distinguish the resources already allocated in the components. This is expressed as an uniform distribution $p_U(k)$ of resources with respect to component wealth $k$. (Second law)
+\end{proposition}
+
+That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is maximized; 2) the wealthier the components considered, the fewer they are. 
+
 \begin{proposition}\label{prop:1}
 	The amount of each resource input to the system is fixed. (First law)
 \end{proposition}
@@ -346,16 +352,10 @@ boils down to dimensionless observance of resource
 dimensions and the multiplicative link of individual resources
 to total resource. 
 
-\begin{proposition}\label{prop:2}
-	In allocating resources, a resource-based system does not distinguish the resources already allocated in the components. This is expressed as an uniform distribution $p_U(k)$ of resources with respect to component wealth $k$. (Second law)
-\end{proposition}
-
-That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is maximized; 2) the wealthier the components considered, the fewer they are. 
-
-\begin{proposition}\label{prop:3}
+\begin{corollary}\label{prop:3}
 	The ground state implied by the everlasting validity of the second law is characterized by
 	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling). (Third law.)
-\end{proposition}
+\end{corollary}
 
 This follows from the second law and the definition of $k$:
 $p(k)=\frac{p_U(k)}{k^\alpha}$, where $\alpha$ is
@@ -415,7 +415,7 @@ This last corollary follows from box counting or, most easily,
 through wave-like reasoning about power laws,
 the excursion of the next section.
 
-\subsection{Phenomenological approach}
+\subsection{Phenomenological approach}\label{sec:phen}
 % pure mathematical interpretation of the power law
 
 We shall also
@@ -518,10 +518,10 @@ The following assumptions are established:
 \begin{enumerate}
 	\item $S$ is made of a number of components that are not all equal among themselves.
 That is to say, there is diversity in the components, in accordance with Proposition~\ref{prop:0}. 
+\item Distribution of resources is uniform with regard to the ``size'' of the components (component wealth) as in the geometric isotropic case of your house.
+This reflects Proposition~\ref{prop:2}
 \item There may be several inputs, but for each input the amount of resources furnished to the System can be considered the same,
 as in a conservation law and in accordance with Proposition~\ref{prop:1}.
-\item Distribution is uniform with regard to the ``size'' of the component (component wealth) as in the geometric isotropic case of your house.
-This reflects Proposition~\ref{prop:2}
 \end{enumerate}
 
 There is no assumption for the Output ($O$), which is taken as to mean the performance (or richness) in terms of the components of $S$.
@@ -530,11 +530,12 @@ each of them have a component wealth $k_n$ distribution
 $p_{k_n}(k_n)=C_n.k_n^{-1}$.
 The Output is the product of these functions
 %O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
-$O = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$. 
+$O = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$
+as shown in Section~\ref{sec:phen}. 
 The Output has therefore a power-law dependence on $k$ with coefficient $\alpha$. 
 Values of $\alpha$ in many empirical cases,
 is normally between $1.5$ and $3$,
-one infers that there are 
+from which one infers that there are 
 fundamentally between two and three types
 of independent inputs.
 This can be envisioned as persons and 
@@ -543,24 +544,26 @@ $person . hour$, the canonical resource for
 industrial production since Taylorism
 and extremed in Fordism.
 
-Let us illustrate with a hypothetical case that may 
-facilitate understanding the concepts.
-A piece of work is to be done in a company.
-What sort of resources can be established as inputs?
+Let us illustrate with a hypothetical case.
+Complex work is to be done in a company.
 Assume three inputs:
-number of workers, working hours and efficiency.
-
-
-We recall that all resources should be fixed and that there is diversity in the components. 
-Then, first the total number of workers available are divided into groups of different sizes,
-
-
-
-%Continuar exemplo ????
-%
-%Falta resumir a literatura que mostra coeficiente entre 1.5 e 3. Mencionar casos em que é maior que 3.
-%Incluir exemplos em que a distribuição uniforme se dá, mesmo que sejam empíricos. Lembro que você tinha isso para lista de e-mails, e acho que outros exemplos com maior apelo para a física precisariam ser incluídos.
-
+number of workers $N$, working hours $W$
+and efficiency $E$.
+Many sophisticated activities are developed by the crew,
+so we assume that all concentrations $C.k^3=n.w.e$
+of these resources might be found in working groups.
+Assuming the tasks changes all the time,
+all concentrations are important.
+Assuming they are equally important beforehand,
+resources will be spread uniformly over $[k_L,k_R]$,
+this is $p_U(k)=\frac{1}{k_R-k_L}$.
+The number of such components, thought,
+decreases with $k^3$, by definition of the component
+with $k$ resources.
+Therefore, $p(k)=\frac{C}{k^3}$, that is,
+the fraction $p(k)$ of components with component wealth $k$
+decrease with $k^3$ and distributes the same
+amount of resources $C=\frac{N.W.E}{k_R-k_L}$ long $k$.
 
 \section{Especial cases}
 The consequences of the
