@@ -266,7 +266,7 @@ P(k) = Ck^{-\alpha}
 \noindent where $k\in [k_L,k_R]$
 and $C$ is constant.
 Assuming idealized phenomena:
-\begin{equation}
+\begin{equation}\label{eq:con}
 C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
 \end{equation}
 \noindent Often, $k_R\rightarrow \infty$ which implies $\alpha>1$ as a condition for convergence of $P(k)$.
@@ -287,7 +287,7 @@ finite variance $\sigma^2$ only when $\alpha>3$, but median $m$ holds for $\alph
 
 
 \subsection{Related work}
-In nearly all systems, power laws are observed through both theory and empirical data.
+In nearly all systems, power laws are observed through both theory and empirical data~\cite{newman}.
 Of special interest in the last decades are the scale-free complex networks,
 the basic characteristic of which is a power law distribution of connectivity (number of edges per node).
 Power laws also govern perception, as exposed by the Webner-Fechner and Stevens laws.
@@ -297,18 +297,41 @@ which includes distribution of human wealth, interactions, friendships;
 connections among airports, synaptic count among neurons.
 Some advocate 
 about a better fit and theoretical backbone for the superposition of a
- power law distribution and a Weibull distribution~\cite{powWeib}.
- Most canonical examples in literature seem to be earthquake intensity and allometric relations of animal bodies,
- most canonical law examples seem to be Pareto and Zipf laws.
- Examples in basic physics are numerous, e.g. in a Newtonian context force is related to distance with $\alpha=2$ and force is related to acceleration with $\alpha=-1$.~\cite{part,pbook}
+power law distribution and a Weibull distribution~\cite{powWeib}.
+Most canonical examples in literature seem to be earthquake intensity and allometric relations of animal bodies,
+most canonical law examples seem to be Pareto and Zipf laws.
+Examples in basic physics are numerous, e.g. in a Newtonian context force $F$ is related to distance $d$ through gravity
+($F=G\frac{m_1\;m_2}{d^2}$)
+with $\alpha=2$ 
+and force is related to acceleration
+($F=m\;a^1$) 
+with $\alpha=-1$.
+Models with expressive power for dealing with broad classes of phenomena
+are continually discussed, 
+but an unified framework such as presented here 
+was not found in literature by the authors.
+~\cite{part,pbook}
 
 \section{Formalization}\label{sec:form}
+% Definitions explicited beforehand:
+% Complex System
+% Component of a CS
+
+The definition of a {\bf complex system} and its components are left open
+for the reader to fit their standpoints. 
+Given the broad range of definitions currently in use, it seems
+more profitable to claim the commonsense notion of
+a complex system to be ``a system in which the whole is more
+than the sum of the individual parts'', and start with:
 
 \begin{definition2}
-	A {\bf resource} is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of the complex system considered.
+	A {\bf resource} is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of a complex system under consideration.
 \end{definition2}
 
- Usually, the complex system is located roughly through its components and the resources that keep the system altogether.
+In practice, a complex system is commonly delimited, specified or evidenced through its components and the resources that keep the system altogether.
+The resources are not restricted to any type
+and can be, for example, geometrical volumes,
+wave cycles or currency values.
 
 \begin{definition2}
 	A {\bf resource-based system} is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system.
@@ -318,37 +341,40 @@ Specially in Game Theory, these components are often considered
 ``self-interested''. This is not part of our definition and
 is not a required condition for the framework here presented.
 Even so, we understand that this formalization shed insight
-in the reasons and way that self-interested agents
+in the reasons why and the ways that self-interested agents
 organize themselves
-with extensive incidence of power-laws.
+with extensive incidence of power laws.
 
 \begin{definition2}
-	The {\bf component wealth} $k$ is the amount of resources allocated to the component.
+	The {\bf component wealth} $k$ is the amount of resources allocated to a component.
 \end{definition2}
 
 We will use $p(k)$ to denote the fraction of components with component wealth $k$. Likewise, the same notation $p(k)$ will denote the probability of choosing a component with an amount $k$ of resources.
 The context should make it clear which is the appropriate meaning.
-This symmetry among probability, frequency and relative count is
-instrumental for the interpretative framework herein presented,
+This correspondence among probability, frequency and relative count is
+instrumental for the interpretative framework presented in this article,
 which is conveniently embedded in the notation.
 It is also useful to observe 
-$k$ as $\lambda$, i.e. as a wave period.
-Then, $p(k)$ is understood as  $f$, the
-frequency of occurrence.
+$k$ as as a wave period $\lambda$.
+Then, $p(k)$ is more immediately understood as 
+the
+frequency
+$f$.
 
 \subsection{Propositions and corollaries}
 % corollaries, lemmas, etc
 
-Inspired in the laws of thermodynamics, we derived four
-propositions.
 These principles can be though of as laws met in
 a very broad class of phenomena.
 These propositions follow from the complexity of the system:
 there is so much involved, that the ignorance is assured and
-one needs to grasp hardly false assumptions. 
-This leads to:
+one needs to grasp hardly false assumptions.
+The resulting axioms can be viewed as statistical tendencies that
+hold with such universality that they can be seen as laws
+that govern phenomena ubiquitously.
 
 
+\setcounter{theorem}{-1}
 \begin{proposition}\label{prop:0}
 	There is diversity among the components of the resource-based system. (Zeroth law)
 \end{proposition}
@@ -361,43 +387,48 @@ Proposition~\ref{prop:0} is required for the attribution of different amounts of
 if they are equal, by definition they have the same component wealth.
 
 \begin{proposition}\label{prop:2}
-	In allocating resources, a resource-based system does not distinguish the resources already allocated in the components. This is expressed as an uniform distribution $p_U(k)$ of resources with respect to component wealth $k$. (Second law)
+	Resources allocation in a resource-based system is uniform across
+	incident component wealth. 
+	This is expressed as an uniform distribution $p_U(k)$ 
+	of resources with respect to component wealth $k$. (First law)
 \end{proposition}
 
-That is, resources are allocated without distinction to component wealth, which has two major consequences: 1) diversity of component wealth is maximized; 2) the wealthier the components considered, the fewer they are. 
+That is, resources are allocated democratically with respect to component wealth values, which has two major consequences: 1) interval of incident component wealth is maximized with respect to a constant resource $C$ distributed; 
+2) the wealthier the components considered, the fewer they are. 
 
 \begin{proposition}\label{prop:1}
-	The amount of each resource input to the system is fixed. (First law)
+	The amount of each resource input to the system is fixed. (Second law)
 \end{proposition}
 
 This follows from the independence of each resource dimension,
-say $\lambda_1$ and $\lambda_2$, and
-the multiplicative relation they hold with the total resource $E=\lambda_1 . \lambda_2$.
-This is due to the essential incomparability of these amounts, if they are truly uncorrelated, i.e. different dimensions.
-
-Next section holds this discussion more throughly
-but it
-boils down to dimensionless observance of resource
-dimensions and the multiplicative link of individual resources
-to total resource. 
+i.e. the incomparability of these amounts,
+say $\lambda_1$ and $\lambda_2$,
+and the multiplicative relation they hold with the total resource $E=\widetilde{C_1} . \lambda_1 . \lambda_2 \equiv \widetilde{C_2}\lambda^{\alpha=2}$
+with $\widetilde{C_X}$ constant.
+Section~\ref{sec:phen} holds this discussion more throughly.
 
 \begin{corollary}\label{prop:3}
-	The ground state implied by the everlasting validity of the second law is characterized by
-	a power-law distribution $p(k)$ of components with component wealth $k$. Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling). (Third law.)
+	The ground state implied by the everlasting validity of the Propositions~\ref{prop:0},~\ref{prop:2} and~\ref{prop:1} is characterized by
+	a power-law distribution $p(k)$ of the number of components with component wealth $k$. (Third law.)
 \end{corollary}
 
-This follows from the second law and the definition of $k$:
-$p(k)=\frac{p_U(k)}{k^\alpha}$, where $\alpha$ is
+This follows from the propositions and the definition of $k$:
+the same amount of resources is allocated
+across all quantities of resources allocated per component.
+Therefore, the fraction $p(k)$ of components with component wealth $k$ is
+$p(k)=\frac{C}{k^\alpha}$, where $\alpha$ is
 the dimensionality of the resource.
 As the system continues to exist,
 and resources are continually allocated, deviations from the equanimous
 distribution $p_U(k)$ of resources along component wealth $k$,
  tend to be transient.
- Notice that $p_U(k)$ is usually not observed, but only through 
+ Notice that $p_U(k)$ is usually not made explicit in literature, but only
  the power-law distribution $p(k)$ of components
 with component wealth $k$.
 
-\begin{corollary}
+ Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling).
+
+\begin{corollary}\label{cor:2}
 	The extension of allocation is $[k_L,k_R]$ with $R_L$ often 0 or 1 and $k_R\approx C$.
 \end{corollary}
 
@@ -407,7 +438,7 @@ it should sweep all possible values, and these are usually
 bounded bellow by being a positive quantity of resources.
 Most usually, systems are considered as a set of components
 or the components in which certain resources couple them,
-in which $k_L=0$ and $K_R=1$ are reasonable, respectively.
+thus $k_L=0$ and $K_R=1$ are reasonable, respectively.
 
 The distributions $p(k)$ and $p_U(k)$ are also
 bounded above when component wealth reaches $k_R \approx C$,
@@ -416,7 +447,7 @@ In empirical data, $k_R$ can vary considerably, due to
 nonlinearity of the resources scaling (most often $k_R<C$) and
 to self-interested agents (most often $k_R>C$).
 Power laws are reported to conduct empirical data sovereignly and
-paradoxically they most often are strict only for a
+often are strict only for a
 (broad) portion of component wealth range.
 
 %\begin{corollary}
@@ -428,12 +459,14 @@ paradoxically they most often are strict only for a
 	The superior limit $k_R$ of the observed allocation of resources is an estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx k_2$).
 \end{corollary}
 
+Which follows form Corollary~\ref{cor:2}.
+
 \begin{corollary}
-	$p(1)$ is another estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx p(1)$).
+	$p(1)$ provides another estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx N . p(1)$, where N is the number of components).
 \end{corollary}
 
 \begin{corollary}
-	An estimate for $C$ can also be found by $\alpha$, $k_L$ and $k_R$ through Equation~\ref{eq:pow}.
+	An estimate for $C$ can also be found by $\alpha$, $k_L$ and $k_R$ through Equation~\ref{eq:con}.
 \end{corollary}
 
 \begin{corollary}
@@ -450,11 +483,11 @@ the excursion of the next section.
 We shall also
 doubt above definitions, propositions and corollaries 
 and depart from a more phenomenological standpoint,
-such as data and descriptive models.
+such as provided via data and descriptive models.
 Suppose there is a power law relation in empirical data
 or driven from specific domain theory.
 Is the conceptualization
-presented above axiomatically still helpful?
+presented above still helpful?
 We provide here a general and mathematically grounded
 interpretation of any power law relationship,
 perfectly consonant with such assumptions.
@@ -480,21 +513,23 @@ resulting in $p(k)$ of such components.
 Now let $f=\frac{v=C}{\lambda_1 . \lambda_2}$, that is,
 the frequency of occurrence
 (or the probability of choosing such event at random) go with the inverse of two periods while the speed is constant. 
-If $\lambda_1==\lambda_2==\lambda$, then $f=\frac{v}{\lambda^2}$
+If $\lambda_1==\lambda_2==\lambda$, then $f=\frac{v}{\lambda^2}$.
 In other words, the density given by an amount $v$
 (or a quantity $C$ of resources) in a hypercube of
 edge $\lambda$ (or component wealth $k$)
-and $\alpha$ dimensions.
-This same reasoning yields the amount, fraction or probability $p(k)$
-of components with such volume.
+and $\alpha=2$ dimensions.
+This same reasoning yields the relative count,
+fraction or probability $p(k)$
+of components with such component wealth $k$ and corresponding hipervolumes $k^\alpha$.
 Be $C_i$ the amount of resources allocated at
 specific resource costs,
 say $\lambda_{1,i}$ and $\lambda_{2,i}$ to strengthen the wave argumentation,
-and assume linearity $\lambda_{1,i}=c.\lambda_{2,1}$,
+and assume linearity $\lambda_{1,i}=c.\lambda_{2,i}$
 such that
 $p(k_i)=\frac{C}{C_i}=\frac{C}{\lambda_{1,i}.\lambda_{2,i}}=
 \frac{C}{c\lambda_{2,i}^2}=\frac{\widetilde{C}}{\lambda_{2,i}^2}\equiv\frac{v}{\lambda^2}$.
-Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment uniformly across component wealth: the higher component wealth implies less numerous components. 
+Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment uniformly across component wealth:
+higher component wealth implies less numerous components. 
 All sorts of nonlinearity should account
 for many kinds of deviations in empirical power laws.
 
@@ -503,32 +538,31 @@ both wave and probabilistic phenomena.
 This suggests that further mathematical
 parallels might be useful in understanding complex
 systems, be it through thermodynamic, wave or quantum theories.
-It is not yet clear to which extent does this correspondence hold true,
+It is not yet clear to which extent this correspondence holds true,
 but one might glimpse diverse severe hypothesis,
 such as a lower bound for the energy involved in the integration of
-the components into a complex system.
-Would such energy account for part of the phenomena
-currently explained through dark matter assumptions?
+the components into a complex system and
+if such energy can account for part of the phenomena
+currently explained through dark matter assumptions.
 
 \section{Paradigmatic examples}\label{sec:par}
 \subsection{Object sizes in your house or elsewhere}
-Pick your size (or the size of your hand, your arm)
-as a measure unit $l$ for length, pick $m \in (0,1)$ 
-and $dm$ arbitrarily small.
+Pick your size (or the size of your hand, or your arm)
+as a measure unit $l$ for length, pick $m \in (0,1)$.
 In your house, there probably are more objects
-of volume $\approx (m.l)^3$ (or that fit such volume)
+of volume $\approx (m.l)^3$ 
 than those of volume $\approx l^3$.
 Furthermore, as we know nothing about your house,
 we can assume that the chance $\rho$ of finding and object
 fitting an arbitrary cube of volume $\approx (m.l)^3$
 is the same as finding an object fitting an
 arbitrary cube of volume of volume $\approx l^3$.
-As your house has a fixed volume, there are $m^3$ more of
-the smaller cubes and therefore $m^3$ more objects of such
+Your house has a fixed volume so there are $m^{-3}$ more of
+the smaller cubes and therefore $m^{-3}$ more objects of such
 volume. 
 The result is a power-law distribution of object volumes
 related to the length $l$ with $\alpha=3$:
-$p(l)=C.l^-3$.
+$p(l)=C.l^{-3}$.
 Notice that if the objects are mutually exclusive,
 $\alpha$ is probably lower, as the number of smaller
 cubes for decrease considerably.
@@ -536,10 +570,11 @@ cubes for decrease considerably.
 This example holds a geometrical
 interpretation of the formalism presented in the previous section.
 It also might be assumed true even if there is no isotropy
-and can be taken as a ``best guess'' if total ignorance
+and can be considered a ``best guess'' if total ignorance
 about the system is assumed. 
-Extreme choices of $l$ and $m$ (and $dl$, $dm=mdl$ for tolerance in size)
-will often exhibit a different behavior (e.g. $l=1$ light year for couting objects in a house) and, in this context, should be taken as an indicative that there is no complex system in the scales observed. 
+Extreme choices of $l$ and $m$ (and of $dl$ and $dm=mdl$ for tolerance in size)
+will often exhibit spurious observations
+as the result of a bad fit of the scale for the analysis.
 
 \subsection{Workers in a factory}
 Consider a generic problem in which a System ($S$) provides an Output ($O$) depending on the Input ($I$) it receives.
