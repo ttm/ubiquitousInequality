@@ -635,59 +635,72 @@ amount of resources $C=\frac{N.W.E}{k_R-k_L}$ along $k$.
 The consequences of the
 interpretation of power laws presented in Section~\ref{sec:form}
 are severe for understanding and dealing with
-phenomena. We expose selected cases in this section.
+diverse (if not almost all)
+phenomena. Selected cases are exposed in this section.
 
 
-\subsection{Scale free complex networks}
-We advocate that this is the similar case of that where edges reflect the resources allocated by individuals. If $f=v/resources_i=v/E_i=v/(N_i . (E_i/N_i))=2v/(N_i . k_i) \equiv v / (\lambda_1 .   \lambda_2)$. As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the primary resource, one can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$. E.g. in a social network, the number of agents allocated and the time each of them put, are seen as the primary resource (individual . time).
+\subsection{Scale-free complex networks}
 
-Questions:
-*) the range of degree covered by scale-free networks is maximum, as do our perception, which also follows power laws. How far can we consider scale-free complex networks to be meta-sensors that captures and processes signals about the very reason of existance of the meta-sensor?
+In a network, one has essentially $E$ edges and $N$ vertices.
+Assuming linearity of resources:
+\begin{equation}\label{eq:nre}
+	Resources=C_1 N + C_2 E \approx C_2 E = C_2 N \frac{E}{N} = C_2 \frac{N \overline{k}}{2}
+\end{equation}
 
-Theorem 1: every scale-free network with distribution of degree $p(k)=C/k^\alpha$ can be understood as having an equanimous distribution of resources in $\alpha$ dimensions.
-Corolary: if $p(E_i)=C/E_i$, with $\alpha=1$. (might have to consider only edges with vertices of other connectivity, i.e. discard edges between vertices with same degree.)
+\noindent where $C_1$ and $C_2$ are constants and $\overline{k}$ is
+the average degree, i.e. the mean of the number of edges attached to each vertex.
+Vertices accountability as direct resources to a network can be
+discarded by the example of a million node network without
+any edges as having no resources to build the network.
+
+\begin{equation}\label{eq:eqf}
+	p(k_i)=\frac{C}{resources_i}=\frac{C}{C_2 E_i}=\frac{C/C_2}{N_i \frac{E_i}{N_i}}=\frac{2C/C_2}{N_i k_i} \equiv \frac{v}{\lambda_1   \lambda_2}
+\end{equation}
+
+As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the primary resource, one can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$. This is the case for a social network, the number of agents allocated and the time each of them put, are seen as the primary resource ($individual . time$), and $\alpha\approx 2$.
 
 \subsection{Meta-sensors}
 Perception presents many psychophysical power-law 
-relations between
+relations between the
 magnitude of the physical stimulus and the perceived 
-(subjective) quantity~\cite{stev,web}.
+(subjective) quantity~\cite{pbook}.
 This is usually attributed to the utility of perception capability,
 which is enhanced upon broadening of the spectrum.
 Another explanation is on the physical phenomena itself.
 Consider a sound wave traveling with constant speed $v$.
 If the organism will consider wave lengths from $\lambda_1$
-to $\lambda_2$, $f=\frac{v}{\lambda} \in [\frac{}]$ follows
+to $\lambda_2$, $f=\frac{v}{\lambda} \in [\frac{v}{\lambda_2},\frac{v}{\lambda1}]$ follows
 a power law with $\alpha=1$.
 
 In either case, the persistence of power laws in perception
-suggests a pertinence, and is regarded as such. This raises
-points a fit, in advance, for complex systems with power laws
-to be thought of as sensor (or meta-sensors) on signals
-of the domain of the resource $k$.
+suggests a pertinence, and is regarded as such by literature.
+This raises
+a fit, in advance, for complex systems with power laws
+to be analysed as sensors (or meta-sensors).
 For example, an interest group on hiking can be understood as
-a meta-sensor about hiking and involved community: current good
+a meta-sensor about hiking and involved community to find current good
 places, equipment, people, proper behavior, etc.
 The power law, i.e. ``the scale-free trace'' to use
-the complex network jargon, sweeps the broadest 
-diversity of engagement, which can be regarded as
-inversely proportional the diversity brought to the group
+the complex network jargon, sweeps a wide
+range of engagement (regarding the concentration of resources).
+The higher the component wealth $k$ the higher the engagement,
+but the lesser diversity is brought to the group
 by the participant~\cite{tStable}: 
 as one allocates more resources (say time)
-in one system (or a set of them),
-it allocates less resources is the rest of the systems.
+in one system,
+it allocates less resources is outside systems.
 
 \subsection{Equanimous inequality}
-Paradoxically, power laws, which is the 
+Paradoxically, power laws, which are the 
 current utmost inequality paradigm,
 follow from an equanimous consideration
-of resources and exhibit other equanimous aspects:
+of resource inputs
+and exhibit other equanimous aspects:
 \begin{itemize}
-	\item $p(k)=C.k^{-\alpha} \Rightarrow p(k).k^{\alpha}=C$, with C constant. That is, the amount $k$ of resources per component times the amount of those components, which is the total ``instantaneous'' allocated resources, is constant $C$. The scaling factor $\alpha$ is herein interpreted as the number of dimensions in which such resources are being observed.
+	\item $p(k)=C.k^{-\alpha} \Rightarrow p(k).k^{\alpha}=C$, with C constant. That is, the amount $k^\alpha$ of resources per component times the amount of those components, which is the total ``instantaneous'' allocated resources, is constant $C$.
 	\item Each component participates in numerous other complex systems, potentially infinite, and should present a broad, if not complete, sweep of resources allocated to itself.
-		These resources are not necessarily of the same type. We assume that human systems, for example, present power-law distributions of knowledge $p_k(k_k)$ and of wealth $p_w(k_w)$, with potentially different (relative) amount $k$ of resources. At the same time, within a fixed type of resource, resources allocated vary in  different systems. For example, an individual tends to have many acquaintances (fixed resource) in its own family, work and neighborhood, a fewer knowns in such circles of distant family members, partners and friends.
-	\item The distinction of each component particularities is often not of core importance to describe complex behavior.
-		This reflects in symmetries among components. For example, Human individuals form complex social systems with power law distributions of relations. All the participants, by being humans, have the same amount of time available each day, resource, to engage in all the complex systems that are presented by the environment. 
+		These resources are not necessarily of the same type. We assume that human systems, for example, present power-law distributions of knowledge $p_k(k_k)$ and of wealth $p_w(k_w)$, with potentially different (relative) amount $k$ of resources. At the same time, within a fixed type of resource, resources allocated vary in  different systems. For example, an individual tends to have many acquaintances (resource) in its own family, work and neighborhood, and fewer knowns in such circles of distant family members, partners and friends.
+	\item The total resource available to each component is potentially the same, but spread differently across systems. For example, human individuals form complex social systems with power-law distributions of relations. All the participants, by being humans, have the same amount of time (resource) available each day to engage in all the complex systems that are presented by the environment. One can even say assume that each individual creates the same amount of relationships with the world each day, be them with other people, ideas, things, etc. 
 \end{itemize}
 
 
