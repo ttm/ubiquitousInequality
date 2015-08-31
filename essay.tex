@@ -43,6 +43,7 @@
 %\usepackage{tocloft}
 %\usepackage{multirow}
 
+\usepackage{amsmath}
 \usepackage{mathpazo} % Use the Palatino font
 %\usepackage[T1]{fontenc} % Required for accented characters
 %\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
@@ -145,12 +146,12 @@
 \begin{flushright} % Right align
 {\LARGE\@title} % Increase the font size of the title
 
-\vspace{20pt} % Some vertical space between the title and author name
+\vspace{5pt} % Some vertical space between the title and author name
 
 {\large\@author} % Author name
 \\\@date % Date
 
-\vspace{25pt} % Some vertical space between the author block and abstract
+\vspace{1pt} % Some vertical space between the author block and abstract
 \end{flushright}
 }
 
@@ -192,7 +193,7 @@
 	The third assumption is that the amount of each resource input to the system is fixed.
 %	The first proposition is that there is diversity among components and not distinguish component cost in allocating resources.
 	This implies that the more resources are allocated per component, the less numbered are such components,
-	with the conservation of the amount of resources distributed through $component wealth = \frac{resources}{component}$ sweep.
+	with the conservation of the amount of resources distributed through $component\; wealth = \frac{resources}{component}$ sweep.
 	Second and third assumptions are conservations laws: energy is conserved through each resource and through component wealth.
 	This can be geometrically described by the distribution of object sizes in a 3D space, where each dimension is assumed to be isotropic.
 	Applying these assumptions to a generic system results in a power-law distribution, whose coefficient is the number of inputs that are independent from each other, i.e. the dimensionsionality of the allocated resources.
@@ -234,31 +235,30 @@
 \section{Introduction}
 Symmetry, and its symmetric twin, asymmetry, or inequality,
 is regarded as fundamental to cognition 
-and knowledge in nearly all fields.
+and knowledge in nearly all fields~\cite{deleuze,part}.
 The ubiquity of symmetry is appreciated so profoundly that
 literature constantly recapitulates that 
 the human thinking presents
 explicit and basic symmetry operations,
 therefore we model the world with symmetry
-regardless of the presence of it.
+regardless of the presence of symmetry.
 Even so, models are useful, and the symmetry observed through scientific
 means are believed to reflect reality, but it is also foreseen
 that new knowledge should spout from a somewhat different paradigm.
-
 In this letter, we present inequality as resulting from
 an uniform distribution of resources with
-respect to the resources already allocated 
+respect to the resources allocated 
 to each component.
 The reminder of this introduction is dedicated
-to a concise depiction of power-laws and related work.
-Section~\ref{sec:form} present both and axiomatic and phenomenological
-description of the framework.
+to a concise depiction of power laws and related work.
+Section~\ref{sec:form} present both an axiomatic and phenomenological
+description of the model.
 Section~\ref{sec:par} expose separately a geometric and a productive system
 paradigms.
 Especial cases are considered in Section~\ref{sec:esp},
 which is followed by concluding remarks.
 
-\subsection{Power laws such as Zipf and Pareto}
+\subsection{Power laws}
 A power law is a functional relationship between two quantities $P(k)$ and $k$ in the form:
 \begin{equation}\label{eq:pow}
 P(k) = Ck^{-\alpha}
@@ -270,9 +270,21 @@ Assuming idealized phenomena:
 C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
 \end{equation}
 \noindent Often, $k_R\rightarrow \infty$ which implies $\alpha>1$ as a condition for convergence of $P(k)$.
-In such cases, the power law has a well-defined mean only if $\alpha>1$,
-a finite variance only when $\alpha>2$. Well-defined skewness and kurtosis are restricted
-to the cases where $\alpha>3$ and $\alpha>4$ respectively.
+In such cases, the power law has finite mean $\mu$ only if $\alpha>2$,
+finite variance $\sigma^2$ only when $\alpha>3$, but median $m$ holds for $\alpha>1$:
+
+\begin{align}\label{eq:md}
+	\mu & =C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
+	\sigma^2 & =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
+	m &=\left[k_L^{1-\alpha}+\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}=
+	\left[k_R^{1-\alpha}-\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}\nonumber
+%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
+%	R_n&=|m_n|\\
+%	\theta_\mu&=Arg(m_1) \nonumber \\
+%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
+\end{align}
+
+
 
 \subsection{Related work}
 In nearly all systems, power laws are observed through both theory and empirical data.
