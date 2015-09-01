@@ -245,7 +245,8 @@ regardless of the presence of symmetry.
 Even so, models are useful, and the symmetry observed through scientific
 means are believed to reflect reality, but it is also foreseen
 that new knowledge should spout from a somewhat different paradigm.
-In this letter, we present inequality as resulting from
+In this letter, we present the extreme inequality
+of power laws as resulting from
 an uniform distribution of resources with
 respect to the resources allocated 
 to each component.
@@ -259,9 +260,9 @@ Especial cases are considered in Section~\ref{sec:esp},
 which is followed by concluding remarks.
 
 \subsection{Power laws}
-A power law is a functional relationship between two quantities $P(k)$ and $k$ in the form:
+A power law is a functional relationship between two quantities $p(k)$ and $k$ in the form:
 \begin{equation}\label{eq:pow}
-P(k) = Ck^{-\alpha}
+p(k) = Ck^{-\alpha}
 \end{equation}
 \noindent where $k\in [k_L,k_R]$
 and $C$ is constant.
@@ -269,14 +270,15 @@ Assuming idealized phenomena:
 \begin{equation}\label{eq:con}
 C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
 \end{equation}
-\noindent Often, $k_R\rightarrow \infty$ which implies $\alpha>1$ as a condition for convergence of $P(k)$.
+\noindent Often, $k_R\rightarrow \infty$ which implies $\alpha>1$ as a condition for convergence of $p(k)$.
 In such cases, the power law has finite mean $\mu$ only if $\alpha>2$,
 finite variance $\sigma^2$ only when $\alpha>3$, but median $m$ holds for $\alpha>1$:
 
 \begin{align}\label{eq:md}
-	\mu & =C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
-	\sigma^2 & =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
-	m &=\left[k_L^{1-\alpha}+\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}=
+	\mu & = \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
+	\sigma^2 &= \int_{k_L}^{k_R}k^2p(k)dk -\mu^2 =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
+	m & : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2}
+	\Rightarrow m=\left[k_L^{1-\alpha}+\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}=
 	\left[k_R^{1-\alpha}-\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}\nonumber
 %	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
 %	R_n&=|m_n|\\
@@ -317,12 +319,19 @@ was not found in literature by the authors.
 % Complex System
 % Component of a CS
 
-The definition of a {\bf complex system} and its components are left open
-for the reader to fit their standpoints. 
-Given the broad range of definitions currently in use, it seems
-more profitable to claim the commonsense notion of
-a complex system to be ``a system in which the whole is more
-than the sum of the individual parts'', and start with:
+\begin{definition2}
+A complex system is a system in which the whole is more
+than the sum of the individual parts,
+\end{definition2}
+
+The definition of a {\bf complex system} and its components 
+can otherwise be left open
+for the reader to fit their standpoints,
+given the broad range of definitions currently in use.
+%Given the broad range of definitions currently in use, it seems
+%more profitable to claim the commonsense notion of
+%a complex system to be ``a system in which the whole is more
+%than the sum of the individual parts'', and start with:
 
 \begin{definition2}
 	A {\bf resource} is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of a complex system under consideration.
