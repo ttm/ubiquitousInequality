@@ -42,7 +42,9 @@
 %\usepackage{wrapfig} % Allows in-line images
 %\usepackage{tocloft}
 %\usepackage{multirow}
-
+%\usepackage[titletoc]{appendix}
+\usepackage[titletoc,title]{appendix}
+%\AtBeginDocument{\renewcommand\appendixname{New Name}}
 \usepackage{amsmath}
 \usepackage{mathpazo} % Use the Palatino font
 %\usepackage[T1]{fontenc} % Required for accented characters
@@ -250,69 +252,7 @@ of power laws as resulting from
 an uniform distribution of resources with
 respect to the resources allocated 
 to each component.
-The reminder of this introduction is dedicated
-to a concise depiction of power laws and related work.
-Section~\ref{sec:form} present both an axiomatic and phenomenological
-description of the model.
-Section~\ref{sec:par} expose separately a geometric and a productive system
-paradigms.
-Especial cases are considered in Section~\ref{sec:esp},
-which is followed by concluding remarks.
 
-\subsection{Power laws}
-A power law is a functional relationship between two quantities $p(k)$ and $k$ in the form:
-\begin{equation}\label{eq:pow}
-p(k) = Ck^{-\alpha}
-\end{equation}
-\noindent where $k\in [k_L,k_R]$
-and $C$ is constant.
-Assuming idealized phenomena:
-\begin{equation}\label{eq:con}
-C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
-\end{equation}
-
-\noindent and median $m$, mean $\mu$ and variance $\sigma^2$ are:
-
-%\begin{equation}
-%\begin{aligned}\label{eq:md}
-\begin{align}\label{eq:md}
-	&\left ( m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2} \right )\nonumber\\
-	m&=\sqrt[1-\alpha]{k_L^{1-\alpha}+\frac{1-\alpha}{2C}}=
-	\sqrt[1-\alpha]{k_R^{1-\alpha}-\frac{1-\alpha}{2C}}=
-	\sqrt[1-\alpha]{\frac{k_R^{1-\alpha}-k_L^{1-\alpha}}{2}}\nonumber\\
-	\mu &= \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}=\frac{1-\alpha}{2-\alpha}\;.\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\\
-	\sigma^2 &= \left[ \int_{k_L}^{k_R}k^2p(k)dk=C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha} =\frac{1-\alpha}{3-\alpha}\;.\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}} \right] -\mu^2\nonumber
-%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
-%	R_n&=|m_n|\\
-%	\theta_\mu&=Arg(m_1) \nonumber \\
-%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
-\end{align}
-%\end{aligned}
-%\end{equation}
-
-Often, $k_R\rightarrow \infty$ which implies: $\alpha>1$ as a condition for convergence of $p(k)$ and for a finite median $m$. Also,
-the mean $\mu$ is finite only if $\alpha>2$, and the
-variance $\sigma^2$ is finite only when $\alpha>3$:
-
-\begin{align}\label{eq:md}
-	if \; k_R \rightarrow \infty \Rightarrow & & \nonumber\\
-											      & if\; \alpha>1 \;\Rightarrow	& C = &\; \frac{\alpha-1}{k_L^{1-\alpha}}\nonumber\\
-										       &  & m  = & \sqrt[1-\alpha]{\frac{\alpha-1}{2C}}&=&\;\;k_L.\sqrt[\alpha-1]{2}&\\
-							   & if\; \alpha>2 \;\Rightarrow	& \mu = & \;C\frac{k_L^{2-\alpha}}{\alpha-2}&= &\;\;k_L\frac{\alpha-1}{\alpha-2}& \nonumber\\
-							& if\; \alpha>3 \;\Rightarrow	& \sigma^2 = & \;C\frac{k_L^{3-\alpha}}{\alpha-3}-\mu^2&= &\;\;k_L^2\frac{\alpha-1}{(\alpha-3)(\alpha-2)^2}&\nonumber
-%	\mu = \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
-%	\sigma^2  \int_{k_L}^{k_R}k^2p(k)dk -\mu^2 =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
-%	m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2}
-%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
-%	R_n&=|m_n|\\
-%	\theta_\mu&=Arg(m_1) \nonumber \\
-%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
-\end{align}
-
-
-
-
-\subsection{Related work}
 In nearly all systems, power laws are observed through both theory and empirical data~\cite{newman}.
 Of special interest in the last decades are the scale-free complex networks,
 the basic characteristic of which is a power law distribution of connectivity (number of edges per node).
@@ -320,7 +260,7 @@ Power laws also govern perception, as exposed by the Webner-Fechner and Stevens 
 As a rule of thumb, the distribution of resources among (often self-interested) components
 tends to follow a power law,
 which includes distribution of human wealth, interactions, friendships;
-connections among airports, synaptic count among neurons.
+connections among airports and synaptic count among neurons.
 Some advocate 
 about a better fit and theoretical backbone for the superposition of a
 power law distribution and a Weibull distribution~\cite{powWeib}.
@@ -334,8 +274,19 @@ and force is related to acceleration
 with $\alpha=-1$.
 Models with expressive power for dealing with broad classes of phenomena
 are continually discussed~\cite{part,pbook}, 
-but an unified framework such as presented here 
+but an unified framework for interpreting any power law,
+such as presented here in this letter,
 was not found in literature by the authors.
+
+Section~\ref{sec:form} presents both an axiomatic and phenomenological
+description of the model.
+Section~\ref{sec:par} exposes separately a geometric and a productive system
+paradigms.
+Especial cases are considered in Section~\ref{sec:esp},
+which is followed by concluding remarks.
+The most elementary mathematical description 
+of power-law distributions is outlined in the
+Appendix.
 
 
 \section{Formalization}\label{sec:form}
@@ -859,6 +810,74 @@ labMacambira.sf.net members for pursuing this and other developments.
 
 %\bibliographystyle{unsrt}
 %\bibliographystyle{plain}
+
+%\renewcommand\appendixname{New Name}
+\begin{appendices}
+
+\section*{Appendix: Power laws}
+A power law is a functional relationship between two quantities $p(k)$ and $k$ in the form:
+\begin{equation}\label{eq:pow}
+p(k) = Ck^{-\alpha}
+\end{equation}
+\noindent where $k\in [k_L,k_R]$
+and $C$ is constant.
+There are four degrees of freedom in four characteristic variables:
+$\alpha$, $C$, $k_L$ and $k_R$.
+Suppose also $p(k)$ normalized so that
+$\int_{k_L}^{k_R}p(k)=1$, i.e.
+the power law is fit to represent a
+probability density function.
+Assuming idealized phenomena:
+\begin{equation}\label{eq:con}
+C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
+\end{equation}
+
+The cumulative distribution function $P(k)$, the and median $m$, mean $\mu$ and variance $\sigma^2$ are:
+
+%\begin{equation}
+%\begin{aligned}\label{eq:md}
+\begin{align}\label{eq:md}
+	P(k) &=\int_{k_L}^k p(\tilde{k})d\tilde{k}=\frac{C}{1-\alpha}(k^{1-\alpha}-k_L^{1-\alpha})=
+	\frac{k^{1-\alpha}-k_L^{1-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\nonumber\\
+	&\left ( m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2} \right )\nonumber\\
+	m&=\sqrt[1-\alpha]{k_L^{1-\alpha}+\frac{1-\alpha}{2C}}=
+	\sqrt[1-\alpha]{k_R^{1-\alpha}-\frac{1-\alpha}{2C}}=
+	\sqrt[1-\alpha]{\frac{k_R^{1-\alpha}-k_L^{1-\alpha}}{2}}\\
+	\mu &= \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}=\left(\frac{1-\alpha}{2-\alpha}\right)\left(\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\right)\nonumber\\
+	\sigma^2 &= \left[ \int_{k_L}^{k_R}k^2p(k)dk=C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha} =\left(\frac{1-\alpha}{3-\alpha}\right)\left(\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\right) \right] -\mu^2\nonumber
+%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
+%	R_n&=|m_n|\\
+%	\theta_\mu&=Arg(m_1) \nonumber \\
+%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
+\end{align}
+%\end{aligned}
+%\end{equation}
+
+Often, $k_R\rightarrow \infty$ which implies: $\alpha>1$ as a condition for convergence of $p(k)$ and for a finite median $m$. Also,
+the mean $\mu$ is finite only if $\alpha>2$, and the
+variance $\sigma^2$ is finite only when $\alpha>3$:
+
+\begin{align}\label{eq:md}
+	if \; k_R \rightarrow \infty \Rightarrow & & \nonumber\\
+											      & if\; \alpha>1 \;\Rightarrow	& C = &\; \frac{\alpha-1}{k_L^{1-\alpha}}\nonumber\\
+							   & & P(k) =& 1-\left(\frac{k_L}{k}\right)^{\alpha-1}\nonumber\\
+										       &  & m  = & \sqrt[1-\alpha]{\frac{\alpha-1}{2C}}&=&\;\;k_L.\sqrt[\alpha-1]{2}&\\
+							   & if\; \alpha>2 \;\Rightarrow	& \mu = & \;k_L^{2-\alpha}\frac{C}{\alpha-2}&= &\;\;k_L\frac{\alpha-1}{\alpha-2}& \nonumber\\
+							& if\; \alpha>3 \;\Rightarrow	& \sigma^2 = & \;k_L^{3-\alpha}\frac{C}{\alpha-3}-\mu^2&= &\;\;k_L^2\frac{\alpha-1}{(\alpha-3)(\alpha-2)^2}&\nonumber
+%	\mu = \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
+%	\sigma^2  \int_{k_L}^{k_R}k^2p(k)dk -\mu^2 =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
+%	m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2}
+%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
+%	R_n&=|m_n|\\
+%	\theta_\mu&=Arg(m_1) \nonumber \\
+%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
+\end{align}
+
+
+
+
+
+\end{appendices}
 \bibliographystyle{ieeetr}
 \bibliography{essay}
 
