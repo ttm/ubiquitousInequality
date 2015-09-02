@@ -270,21 +270,45 @@ Assuming idealized phenomena:
 \begin{equation}\label{eq:con}
 C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
 \end{equation}
-\noindent Often, $k_R\rightarrow \infty$ which implies $\alpha>1$ as a condition for convergence of $p(k)$.
-In such cases, the power law has finite mean $\mu$ only if $\alpha>2$,
-finite variance $\sigma^2$ only when $\alpha>3$, but median $m$ holds for $\alpha>1$:
 
+\noindent and median $m$, mean $\mu$ and variance $\sigma^2$ are:
+
+%\begin{equation}
+%\begin{aligned}\label{eq:md}
 \begin{align}\label{eq:md}
-	\mu & = \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
-	\sigma^2 &= \int_{k_L}^{k_R}k^2p(k)dk -\mu^2 =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
-	m & : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2}
-	\Rightarrow m=\left[k_L^{1-\alpha}+\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}=
-	\left[k_R^{1-\alpha}-\frac{1-\alpha}{2C}\right]^{\frac{1}{1-\alpha}}\nonumber
+	&\left ( m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2} \right )\nonumber\\
+	m&=\sqrt[1-\alpha]{k_L^{1-\alpha}+\frac{1-\alpha}{2C}}=
+	\sqrt[1-\alpha]{k_R^{1-\alpha}-\frac{1-\alpha}{2C}}=
+	\sqrt[1-\alpha]{\frac{k_R^{1-\alpha}-k_L^{1-\alpha}}{2}}\nonumber\\
+	\mu &= \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}=\frac{1-\alpha}{2-\alpha}\;.\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\\
+	\sigma^2 &= \left[ \int_{k_L}^{k_R}k^2p(k)dk=C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha} =\frac{1-\alpha}{3-\alpha}\;.\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}} \right] -\mu^2\nonumber
 %	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
 %	R_n&=|m_n|\\
 %	\theta_\mu&=Arg(m_1) \nonumber \\
 %	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
 \end{align}
+%\end{aligned}
+%\end{equation}
+
+Often, $k_R\rightarrow \infty$ which implies: $\alpha>1$ as a condition for convergence of $p(k)$ and for a finite median $m$. Also,
+the mean $\mu$ is finite only if $\alpha>2$, and the
+variance $\sigma^2$ is finite only when $\alpha>3$:
+
+\begin{align}\label{eq:md}
+	if \; k_R \rightarrow \infty \Rightarrow & & \nonumber\\
+											      & if\; \alpha>1 \;\Rightarrow	& C = &\; \frac{\alpha-1}{k_L^{1-\alpha}}\nonumber\\
+										       &  & m  = & \sqrt[1-\alpha]{\frac{\alpha-1}{2C}}&=&\;\;k_L.\sqrt[\alpha-1]{2}&\\
+							   & if\; \alpha>2 \;\Rightarrow	& \mu = & \;C\frac{k_L^{2-\alpha}}{\alpha-2}&= &\;\;k_L\frac{\alpha-1}{\alpha-2}& \nonumber\\
+							& if\; \alpha>3 \;\Rightarrow	& \sigma^2 = & \;C\frac{k_L^{3-\alpha}}{\alpha-3}-\mu^2&= &\;\;k_L^2\frac{\alpha-1}{(\alpha-3)(\alpha-2)^2}&\nonumber
+%	\mu = \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
+%	\sigma^2  \int_{k_L}^{k_R}k^2p(k)dk -\mu^2 =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
+%	m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2}
+%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
+%	R_n&=|m_n|\\
+%	\theta_\mu&=Arg(m_1) \nonumber \\
+%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
+\end{align}
+
 
 
 
@@ -309,10 +333,10 @@ and force is related to acceleration
 ($F=m\;a^1$) 
 with $\alpha=-1$.
 Models with expressive power for dealing with broad classes of phenomena
-are continually discussed, 
+are continually discussed~\cite{part,pbook}, 
 but an unified framework such as presented here 
 was not found in literature by the authors.
-~\cite{part,pbook}
+
 
 \section{Formalization}\label{sec:form}
 % Definitions explicited beforehand:
@@ -321,7 +345,7 @@ was not found in literature by the authors.
 
 \begin{definition2}
 A complex system is a system in which the whole is more
-than the sum of the individual parts,
+than the sum of the individual parts.
 \end{definition2}
 
 The definition of a {\bf complex system} and its components 
@@ -346,9 +370,9 @@ wave cycles or currency values.
 	A {\bf resource-based system} is a complex system that has an underlying resource vital to the their components and their interdependent roles in the system.
 \end{definition2}
 
-Specially in Game Theory, these components are often considered
-``self-interested''. This is not part of our definition and
-is not a required condition for the framework here presented.
+Specially in Game Theory, the components are often considered
+``self-interested''. This is not a required condition for the 
+framework here presented.
 Even so, we understand that this formalization shed insight
 in the reasons why and the ways that self-interested agents
 organize themselves
@@ -370,6 +394,7 @@ the
 frequency
 $f$.
 
+
 \subsection{Propositions and corollaries}
 % corollaries, lemmas, etc
 
@@ -385,7 +410,7 @@ that govern phenomena ubiquitously.
 
 \setcounter{theorem}{-1}
 \begin{proposition}\label{prop:0}
-	There is diversity among the components of the resource-based system. (Zeroth law)
+	There is diversity among the components of the resource-based system.
 \end{proposition}
 
 If there is a big set of components, there is hardly any way to avoid diversity. Be it location, size, age, the way someone regards them, etc., distinctions arise (as do symmetry). This can be regarded as both a statistical law, or even as a deeper truth.
@@ -399,45 +424,58 @@ if they are equal, by definition they have the same component wealth.
 	Resources allocation in a resource-based system is uniform across
 	incident component wealth. 
 	This is expressed as an uniform distribution $p_U(k)$ 
-	of resources with respect to component wealth $k$. (First law)
+	of resources with respect to component wealth $k$.
 \end{proposition}
 
 That is, resources are allocated democratically with respect to component wealth values, which has two major consequences: 1) interval of incident component wealth is maximized with respect to a constant resource $C$ distributed; 
 2) the wealthier the components considered, the fewer they are. 
 
 \begin{proposition}\label{prop:1}
-	The amount of each resource input to the system is fixed. (Second law)
+	The amount of each resource input to the system is fixed.
 \end{proposition}
 
 This follows from the independence of each resource dimension,
 i.e. the incomparability of these amounts,
 say $\lambda_1$ and $\lambda_2$,
-and the multiplicative relation they hold with the total resource $E=\widetilde{C_1} . \lambda_1 . \lambda_2 \equiv \widetilde{C_2}\lambda^{\alpha=2}$
+and the multiplicative relation they hold with the total resource: $E=\widetilde{C_1} . \lambda_1 . \lambda_2 \equiv \widetilde{C_2}\lambda^{\alpha=2}$
 with $\widetilde{C_X}$ constant.
-Section~\ref{sec:phen} holds this discussion more throughly.
+Notice that $E=\widetilde{C_1} . \lambda_1 + \widetilde{C_2}.\lambda_2 \equiv \widetilde{C_3}\lambda^{\alpha=1}$, that is: a resource resulting from the summation of other two unidimensional resources is an unidimensional resource and these resources are not of independent dimensions.
+For example, if your the resources are $components$ and $time$,
+a final resource $E=5\, components + 4h=9$
+holds little if any information, while
+$E= 5\, components \, . \, 4 h= 20\; components . hours$ is
+a reasonable measure of resources in a canonical metric.
 
 \begin{corollary}\label{prop:3}
-	The ground state implied by the everlasting validity of the Propositions~\ref{prop:0},~\ref{prop:2} and~\ref{prop:1} is characterized by
-	a power-law distribution $p(k)$ of the number of components with component wealth $k$. (Third law.)
+	The equilibrium state implied by the everlasting validity of the Propositions~\ref{prop:0},~\ref{prop:2} and~\ref{prop:1} is characterized by
+	a power-law distribution $p(k)$ of the number of components with component wealth $k$.
 \end{corollary}
 
-This follows from the propositions and the definition of $k$:
-the same amount of resources is allocated
-across all quantities of resources allocated per component.
+From the propositions, the same amount $C$ of resources is allocated
+across all quantities $k$ of resources allocated per component.
 Therefore, the fraction $p(k)$ of components with component wealth $k$ is
 $p(k)=\frac{C}{k^\alpha}$, where $\alpha$ is
 the dimensionality of the resource.
 As the system continues to exist,
 and resources are continually allocated, deviations from the equanimous
-distribution $p_U(k)$ of resources along component wealth $k$,
+distribution $p_U(k)$ of resources along component wealth $k$
  tend to be transient.
  Notice that $p_U(k)$ is usually not made explicit in literature, but only
  the power-law distribution $p(k)$ of components
 with component wealth $k$.
+Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling).
 
- Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling).
+In other words,
+if there are $\alpha$ independent inputs,
+i.e. resources in $\alpha$ dimensions,
+each have a component wealth $k_n$ distribution
+$p_{k_n}(k_n)=C_n.k_n^{-1}$
+and the final and perceived distribution
+is the product of these functions
+%O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
+$p(k) = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$. 
 
-\begin{corollary}\label{cor:2}
+ \begin{corollary}\label{cor:2}
 	The extension of allocation is $[k_L,k_R]$ with $R_L$ often 0 or 1 and $k_R\approx C$.
 \end{corollary}
 
@@ -465,7 +503,7 @@ often are strict only for a
 %\end{corollary}
 
 \begin{corollary}
-	The superior limit $k_R$ of the observed allocation of resources is an estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx k_2$).
+	The upper limit $k_R$ of the observed allocation of resources is an estimate of the amount of resources $C$ equally distributed along component wealth ($C\approx k_2$).
 \end{corollary}
 
 Which follows form Corollary~\ref{cor:2}.
@@ -597,8 +635,9 @@ This reflects Proposition~\ref{prop:2}
 	in accordance with Proposition~\ref{prop:1}.
 \end{enumerate}
 
-There is no assumption for the Output ($O$),
-which assumed to be the performance (or richness) in terms of the components of $S$.
+The Output ($O$)
+is assumed to be the performance (or richness) in terms of the components of $S$.
+
 If there are $\alpha$ types of independent inputs, i.e. resources in $\alpha$ dimensions,
 each have a component wealth $k_n$ distribution
 $p_{k_n}(k_n)=C_n.k_n^{-1}$.
@@ -606,6 +645,7 @@ The Output is the product of these functions
 %O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
 $O = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$
 as shown in Section~\ref{sec:phen}. 
+
 The Output has therefore a power-law dependence on $k$ with coefficient $\alpha$. 
 Empirical values of $\alpha$
 are normally between $1.5$ and $3$,
