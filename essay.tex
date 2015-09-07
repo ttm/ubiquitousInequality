@@ -75,67 +75,6 @@
 		      \ifdim\lastskip<1.5em \hskip-\lastskip
 		            \hskip1.5em plus0em minus0.5em \fi \nobreak
 			          \vrule height0.75em width0.5em depth0.25em\fi}
-\newcommand{\githubi}{Git\textsc{h}ub}
-\newcommand{\bdoh}{{\sc b}lack {\sc d}uck {\sc o}pen \textsc{hub}}
-\newcommand{\ohloh}{\textsc{o}hloh}
-\newcommand{\php}{\textsc{php}}
-\newcommand{\twitter}{\textsc{t}witter}
-\newcommand{\facebook}{\textsc{f}acebook}
-\newcommand{\msn}{\textsc{msn}}
-\newcommand{\gchat}{\textsc{g}oogle \textsc{c}hat}
-\newcommand{\bash}{\textsc{b}ash}
-\newcommand{\python}{\textsc{p}ython}
-\newcommand{\django}{\textsc{d}jango}
-\newcommand{\curl}{c\textsc{url}}
-\newcommand{\firefox}{\textsc{f}irefox}
-\newcommand{\floss}{\textsc{floss}}
-\newcommand{\openoffice}{\textsc{o}pen\textsc{o}ffice}
-\newcommand{\puredata}{\textsc{p}uredata}
-\newcommand{\schema}{\textsc{s}chema.org}
-\newcommand{\wiki}{\textsc{w}iki}
-\newcommand{\nosql}{\textsc{n}o\textsc{sql}}
-\newcommand{\etherpad}{\textsc{e}therpad}
-\newcommand{\irc}{\textsc{irc}}
-\newcommand{\irci}{\textsc{Irc}}
-\newcommand{\ocd}{\textsc{ocd}}
-\newcommand{\participa}{\textsc{p}articipa.br}
-\newcommand{\httpb}{\textsc{http}}
-\newcommand{\foaf}{\textsc{foaf}}
-\newcommand{\ops}{\textsc{ops}}
-\newcommand{\sioc}{\textsc{sioc}}
-\newcommand{\gndo}{\textsc{gndo}}
-\newcommand{\html}{\textsc{html}}
-\newcommand{\ggg}{\textsc{ggg}}
-\newcommand{\opa}{\textsc{opa}}
-\newcommand{\obs}{\textsc{obs}}
-\newcommand{\vbs}{\textsc{vbs}}
-\newcommand{\lod}{\textsc{lod}}
-\newcommand{\nlp}{\textsc{nlp}}
-\newcommand{\sectionb}{\textsc{s}ection}
-\newcommand{\cn}{\textsc{cn}}
-\newcommand{\aab}{\textsc{aa}}
-\newcommand{\dc}{\textsc{d}ublin {\sc c}ore}
-\newcommand{\json}{\textsc{json}}
-\newcommand{\flask}{\textsc{f}lask}
-\newcommand{\aai}{\textsc{Aa}}
-\newcommand{\ontologiaa}{\textsc{o}ntologi\textsc{aa}}
-\newcommand{\ontologiaai}{\textsc{O}ntologi\textsc{aa}}
-\newcommand{\owl}{{\sc owl}}
-\newcommand{\www}{{\sc www}}
-\newcommand{\rdfi}{{\sc Rdf}}
-\newcommand{\mongodb}{{\sc m}ongo{\sc db}}
-\newcommand{\mysql}{{\sc m}y{\sc sql}}
-\newcommand{\rdf}{{\sc rdf}}
-%\newcommand{\paaineli}{P{\sc aa}inel}
-\newcommand{\paaineli}{P{\bf \sc aa}inel}
-\newcommand{\paainel}{p{\sc aa}inel}
-\newcommand{\gsd}{\textsc{gsd}}
-\newcommand{\ui}{\textsc{ui}}
-%\newcommand{\lmb}{\url{lab\textsc{M}acambira.sf.net}}
-\newcommand{\lm}{lab\textsc{M}acambira.sf.net}
-%\newcommand{\lm}{\url{labMacambira.sf.net}}
-
-
 
 \makeatletter
 \renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
@@ -336,10 +275,11 @@ in the reasons why and the ways that self-interested agents
 organize themselves with extensive incidence of power laws.
 
 \begin{definition2}
-	The {\bf component wealth} $k$ is the amount of resources allocated to a component.
+	The {\bf component wealth} $k$ is the amount of resources (of a certain kind) allocated to a component.
 \end{definition2}
 
-We will use $p(k)$ to denote the fraction of components with component wealth $k$. Likewise, the same notation $p(k)$ will denote the probability of choosing a component with an amount $k$ of resources.
+We will use $p(k)$ to denote the fraction of components with component wealth $k$.
+Likewise, the same notation $p(k)$ will denote the probability of choosing a component with an amount $k$ of resources.
 The context should make it clear which is the appropriate meaning.
 This correspondence among probability, frequency and relative count is
 instrumental for the interpretative framework presented in this article,
@@ -347,9 +287,11 @@ which is conveniently embedded in the notation.
 It is also useful to observe 
 $k$ as as a wave period $\lambda$.
 Then, $p(k)$ is more immediately understood as 
-the
-frequency
-$f$.
+the frequency $f$.
+Notice that $k$ is a measure of the resources,
+not total resources (or total component wealth), which
+might be correlated to $k$ and have $k$ as one of the resources.
+
 
 
 \subsection{Propositions and corollaries}
@@ -388,12 +330,21 @@ That is, resources are allocated democratically with respect to component wealth
 2) the wealthier the components considered, the fewer they are. 
 
 \begin{proposition}\label{prop:1}
-	The amount of each resource input to the system is fixed.
+	The different resource inputs are combined in the $\alpha$ dimensions of the resources.
+%	The amount of each resource input to the system is fixed.
 \end{proposition}
+% If you observe one dimension k of an \alpha -dimensional resource,
+% observe a C/k^\alpha distribution, regardless of which are
+% the other dimensions: the \alpha-dimension relation
+% of size and scale is preserved.
 
-Total resource is the product of resources in each dimension.
+% If total resource = resource A x resource B ...
+% they are all directly proportional to total resource
 
-Also, resources can be proportionally related.
+
+%Total resource is the product of resources in each dimension.
+%
+%Also, resources can be proportionally related.
 
 This follows from the distinction of each resource dimension,
 i.e. the incomparability of these amounts,
@@ -401,7 +352,7 @@ say $\lambda_1$ and $\lambda_2$,
 and the multiplicative relation they hold with the total resource: $E=\widetilde{C_1} . \lambda_1 . \lambda_2 \equiv \widetilde{C_2}\lambda^{\alpha=2}$
 with $\widetilde{C_X}$ constant.
 Notice that $E=\widetilde{C_1} . \lambda_1 + \widetilde{C_2}.\lambda_2 \equiv \widetilde{C_3}\lambda^{\alpha=1}$, that is: a resource resulting from the summation of other two unidimensional resources is an unidimensional resource and these resources are not of distinct dimensions.
-For example, if your the resources are $components$ and $time$,
+For example, if the resources are $components$ and $time$,
 a final resource $E=5\, components + 4h=9$
 holds little if any information, while
 $E= 5\, components \, . \, 4 h= 20\; components . hours$ is
@@ -416,7 +367,7 @@ From the propositions, the same amount $C$ of resources is allocated
 across all quantities $k$ of resources allocated per component.
 Therefore, the fraction $p(k)$ of components with component wealth $k$ is
 $p(k)=\frac{C}{k^\alpha}$, where $\alpha$ is
-the dimensionality of the resource.
+the dimensionality of the resources compared to the dimension of $k$.
 As the system continues to exist,
 and resources are continually allocated, deviations from the equanimous
 distribution $p_U(k)$ of resources along component wealth $k$
@@ -426,15 +377,15 @@ distribution $p_U(k)$ of resources along component wealth $k$
 with component wealth $k$.
 Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling).
 
-In other words,
-if there are $\alpha$ independent inputs,
-i.e. resources in $\alpha$ dimensions,
-each have a component wealth $k_n$ distribution
-$p_{k_n}(k_n)=C_n.k_n^{-1}$
-and the final and perceived distribution
-is the product of these functions
-%O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
-$p(k) = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$. 
+%In other words,
+%if there are $\alpha$ independent inputs,
+%i.e. resources in $\alpha$ dimensions,
+%each have a component wealth $k_n$ distribution
+%$p_{k_n}(k_n)=C_n.k_n^{-1}$
+%and the final and perceived distribution
+%is the product of these functions
+%%O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
+%$p(k) = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$. 
 
  \begin{corollary}\label{cor:2}
 	The extension of allocation is $[k_L,k_R]$ with $R_L$ often 0 or 1 and $k_R\approx C$.
@@ -446,7 +397,7 @@ it should sweep all possible values, and these are usually
 bounded bellow by being a positive quantity of resources.
 Most usually, systems are considered as a set of components
 or the components in which certain resources couple them,
-thus $k_L=0$ and $K_R=1$ are reasonable, respectively.
+thus $k_L=0$ and $k_R=1$ are reasonable, respectively.
 
 The distributions $p(k)$ and $p_U(k)$ are also
 bounded above when component wealth reaches $k_R \approx C$,
@@ -493,15 +444,15 @@ doubt above definitions, propositions and corollaries
 and depart from a more phenomenological standpoint,
 such as provided via data and descriptive models.
 Suppose there is a power law relation in empirical data
-or driven from specific domain theory.
+or driven from specific knowledge.
 Is the conceptualization
 presented above still helpful?
 We provide here a general and mathematically grounded
 interpretation of any power law relationship,
 perfectly consonant with such assumptions.
-We understand that this short theoretical consideration
-suggests, sustains and deepen them.
-Both approaches sustain a quasi-``if and only if''
+This short phenomenological consideration
+suggests, sustains and deepen the theory presented in the last section.
+Both approaches pose a quasi-``if and only if''
 interpretation of power laws.
 
 Consider a constant speed $v$ for a wave propagation
@@ -511,7 +462,7 @@ inversely proportional to the cycle length $\lambda$ (the period).
 In usual notation $f=\frac{v}{\lambda}$.
 The constant speed $v$ implies a power law between 
 $f$ and $\lambda$ (with $\alpha=1$ and $C=v$).
-This is a core insight, the general case of a power law can
+This is the core insight, the general case of a power law can
 be interpreted as resulting from a constant amount $C$ of
 fundamental resources with dimensionality $\alpha$ 
 being homogeneously distributed across
@@ -528,7 +479,7 @@ edge $\lambda$ (or component wealth $k$)
 and $\alpha=2$ dimensions.
 This same reasoning yields the relative count,
 fraction or probability $p(k)$
-of components with such component wealth $k$ and corresponding hipervolumes $k^\alpha$.
+of components with such component wealth $k$ and corresponding hypercubes $k^\alpha$.
 Be $C_i$ the amount of resources allocated at
 specific resource costs,
 say $\lambda_{1,i}$ and $\lambda_{2,i}$ to strengthen the wave argumentation,
@@ -538,9 +489,24 @@ $p(k_i)=\frac{C}{C_i}=\frac{C}{\lambda_{1,i}.\lambda_{2,i}}=
 \frac{C}{c\lambda_{2,i}^2}=\frac{\widetilde{C}}{\lambda_{2,i}^2}\equiv\frac{v}{\lambda^2}$.
 Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment uniformly across component wealth:
 higher component wealth implies less numerous components. 
+
+This interpretation might be misleading in the case of random variables
+and power-law distributions.
+In such cases, it is more coherent to assume random variables
+$\lambda_{1,i}$ and $\lambda_{2,i}$ as presenting an uniform distribution of resources along component wealth
+themselves:
+$p(\lambda_{1,i})=\frac{C_i}{\lambda_{1,i}^{\alpha_1}}$
+and
+$p(\lambda_{2,i})=\frac{C_i}{\lambda_{2,i}^{\alpha_2}}$.
+Consider de product distribution of the
+$\lambda_{3,i}^2=\lambda_{1,i}.\lambda_{2,i}$
+variable:
+$p(\lambda_{3,i})=C_1.C_2.\lambda_3^{-2\alpha_2}\frac{(R_{1,R}-R_{1,L})^{\alpha_2-\alpha_1}}{\alpha_2-\alpha_1}
+=C_1.C_2.\lambda_3^{-2\alpha_1}\frac{(R_{2,R}-R_{2,L})^{\alpha_1-\alpha_2}}{\alpha_1-\alpha_2}$
+Most immediate 
+
 All sorts of nonlinearity should account
 for many kinds of deviations in empirical power laws.
-
 Such interpretation holds for 
 both wave and probabilistic phenomena.
 This suggests that further mathematical
@@ -839,6 +805,7 @@ the power law is fit to represent a
 probability density function.
 Assuming idealized phenomena:
 \begin{equation}\label{eq:con}
+\int_{k_L}^{k_R}p(k)=1\;\Rightarrow\;
 C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
 \end{equation}
 
