@@ -495,25 +495,34 @@ and power-law distributions.
 In such cases, it is more coherent to assume random variables
 $\lambda_{1,i}$ and $\lambda_{2,i}$ as presenting an uniform distribution of resources along component wealth
 themselves:
-$p(\lambda_{1,i})=\frac{C_i}{\lambda_{1,i}^{\alpha_1}}$
+$p_{\lambda_{1}}(\lambda_{1,i})=\frac{C_i}{\lambda_{1,i}^{\alpha_1}}$
 and
-$p(\lambda_{2,i})=\frac{C_i}{\lambda_{2,i}^{\alpha_2}}$.
+$p_{\lambda_{2}}(\lambda_{2,i})=\frac{C_i}{\lambda_{2,i}^{\alpha_2}}$.
 Consider de product distribution of the
 $\lambda_{3,i}^2=\lambda_{1,i}.\lambda_{2,i}$
 variable:
-$p(\lambda_{3,i})=C_1.C_2.\lambda_3^{-2\alpha_2}\frac{(R_{1,R}-R_{1,L})^{\alpha_2-\alpha_1}}{\alpha_2-\alpha_1}
-=C_1.C_2.\lambda_3^{-2\alpha_1}\frac{(R_{2,R}-R_{2,L})^{\alpha_1-\alpha_2}}{\alpha_1-\alpha_2}$
-Most immediate 
+\begin{equation}
+p_{\lambda_3^2}(\lambda_{3,i}^2)=C_1.C_2.\lambda_3^{-2\alpha_2}\frac{(R_{1,R}-R_{1,L})^{\alpha_2-\alpha_1}}{\alpha_2-\alpha_1}
+=C_1.C_2.\lambda_3^{-2\alpha_1}\frac{(R_{2,R}-R_{2,L})^{\alpha_1-\alpha_2}}{\alpha_1-\alpha_2}
+\end{equation}
+where $R_R$ and $R_L$ are the upper and lower limits of the respective resources in the system considered.
+Notice that $p_{\lambda_3^2}(\lambda_{3,i}^2)=\frac{N_i}{N}=p(\lambda_{0,i})$,
+where $p(\lambda_{0,i}$ is the probability that a component has a measured
+component wealth $\lambda_{0,i}$ correlated to $\lambda_{3,i}^2$. 
+The number $N_i$ of components with component wealth $\lambda_{3,i}^2$ and the total
+number of components $N$ are conserved for $\lambda_{0,i}$.
+If assumed $\lambda_{0,i} \propto \lambda_{3,i}$, than
+$p(k_{0,i}) \propto k_{0,i}^2$.
 
-All sorts of nonlinearity should account
+
+All sorts of nonlinearities should account
 for many kinds of deviations in empirical power laws.
-Such interpretation holds for 
-both wave and probabilistic phenomena.
-This suggests that further mathematical
+Also,
+both wave and probabilistic interpretations
+suggest that further mathematical
 parallels might be useful in understanding complex
 systems, be it through thermodynamic, wave or quantum theories.
-It is not yet clear to which extent this correspondence holds true,
-but one might glimpse diverse severe hypothesis,
+One might glimpse diverse severe hypothesis,
 such as a lower bound for the energy involved in the integration of
 the components into a complex system and
 if such energy can account for part of the phenomena
@@ -564,13 +573,10 @@ This reflects Proposition~\ref{prop:2}
 
 The Output ($O$)
 is assumed to be the performance (or richness) in terms of the components of $S$.
-
 If there are $\alpha$ types of independent inputs, i.e. resources in $\alpha$ dimensions,
-each have a component wealth $k_n$ distribution
-$p_{k_n}(k_n)=C_n.k_n^{-1}$.
-The Output is the product of these functions
+the Output is the product of these functions should be
 %O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
-$O = \prod_1^{\alpha} C_n.k_n^{-1}\equiv C.k^{-\alpha}$
+$O =C.k^{-\alpha}$, where $k$ is a one dimensional component wealth observation,
 as shown in Section~\ref{sec:phen}. 
 
 The Output has therefore a power-law dependence on $k$ with coefficient $\alpha$. 
