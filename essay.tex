@@ -636,18 +636,21 @@ discarded by the example of a million node network without
 any edges as having no resources to build the network. Therefore:
 
 \begin{equation}\label{eq:eqf}
-	p(k_i)=\frac{C}{resources_i}=\frac{C}{C_2 E_i}=\frac{C/C_2}{N_i \frac{E_i}{N_i}}=\frac{2C/C_2}{N_i k_i} \equiv \frac{v}{\lambda_1   \lambda_2}
+	p_{E_i}(k_i)=\frac{C}{resources_i}=\frac{C}{C_2 E_i}=\frac{C/C_2}{N_i \frac{E_i}{N_i}}=\frac{2C/C_2}{N_i k_i} \equiv \frac{v}{\lambda_1   \lambda_2}
 \end{equation}
 
-As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the fundamental resource, one can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$. This is the case for a social network, the number of agents allocated $N_i$ and the time each of them put (related to $k_i$), are seen as the primary resource ($individuals . time$), and $\alpha\approx 2$.
+As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the fundamental resource, one can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$. This is the case for a social network, the number of agents allocated $N_i$ and the time each of them put (related to $k_i$), are seen as the primary resource ($individuals . time$), and $\alpha\approx 2$
+as empirical evidenced~\cite{newman}.
 
 Also:
 \begin{equation}\label{eq:eqf}
-	p(k_i)=\frac{N_i}{N}=\frac{2C/C_2}{N_i k_i} \Rightarrow \frac{N_i^2}{N^2}=2\frac{C}{N.C_2}k_i^{-1} \Rightarrow p(k_i)\propto k_i^{-\frac{1}{2}}
+	p_{E_i}(k_i)=\frac{N_i}{N}=\frac{2C/C_2}{N_i k_i} \Rightarrow \frac{N_i^2}{N^2}=2\frac{C}{N.C_2}k_i^{-1} \Rightarrow p_{k_i}(k_i)\propto k_i^{-\frac{1}{2}}
 \end{equation}
 
-\noindent so that if $p(k_i)$ is observed only with respect to the degree, $\alpha=0.5$,
-which is far from experimental evidence.
+\noindent so that if $p(k_i)$ is observed only with respect to the degree, 
+$\alpha=0.5$,
+which is far from empirical evidence because it only captures the distribution
+of one of the resources with respect to $k_i$.
 
 \subsection{Meta-sensors}
 Perception presents many psychophysical power-law 
