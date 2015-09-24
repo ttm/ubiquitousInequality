@@ -248,7 +248,7 @@ given the broad range of definitions currently in use.
 %than the sum of the individual parts'', and start with:
 
 \begin{definition2}
-	A {\bf resource} is anything that is used by a complex system to subsist and communicate. The term is used herein for a resource in evidence for the persistence of a complex system under consideration.
+	A {\bf resource} is anything that is used by a complex system to subsist and communicate.
 \end{definition2}
 
 In practice, a complex system is commonly delimited, specified or evidenced through its components and the resources that keep the system altogether.
@@ -267,12 +267,6 @@ wave cycles or currency values.
 %in the reasons why and the ways that self-interested agents
 %organize themselves
 %with extensive incidence of power laws.
-
-It is not required for the components to be ``self-interested'',
-although often required in this context, and although
-we understand that the formalization presented here shed insight
-in the reasons why and the ways that self-interested agents
-organize themselves with extensive incidence of power laws.
 
 \begin{definition2}
 	The {\bf component wealth} $k$ is the amount of resources (of a certain kind) allocated to a component.
@@ -297,16 +291,6 @@ might be correlated to $k$ and have $k$ as one of the resources.
 \subsection{Propositions and corollaries}
 % corollaries, lemmas, etc
 
-These principles can be though of as laws met in
-a very broad class of phenomena.
-These propositions follow from the complexity of the system:
-there is so much involved, that the ignorance is assured and
-one needs to grasp hardly false assumptions.
-The resulting axioms can be viewed as statistical tendencies that
-hold with such universality that they can be seen as laws
-that govern phenomena ubiquitously.
-
-
 \setcounter{theorem}{-1}
 \begin{proposition}\label{prop:0}
 	There is diversity among the components of the resource-based system.
@@ -328,11 +312,14 @@ if they are equal, by definition they have the same component wealth.
 
 That is, resources are allocated democratically with respect to component wealth values, which has two major consequences: 1) interval of incident component wealth is maximized with respect to a constant resource $C$ distributed; 
 2) the wealthier the components considered, the fewer they are. 
+Indeed, the resources are evidence for the persistence of the complex system under consideration,
+i.e. given a set of components the system is often delimited by the allocated resources
+and the components without resources allocated are discarded.
 
-\begin{proposition}\label{prop:1}
+\begin{corollary}\label{prop:1}
 	The different resource inputs are combined in the $\alpha$ dimensions of the resources.
 %	The amount of each resource input to the system is fixed.
-\end{proposition}
+\end{corollary}
 % If you observe one dimension k of an \alpha -dimensional resource,
 % observe a C/k^\alpha distribution, regardless of which are
 % the other dimensions: the \alpha-dimension relation
@@ -375,8 +362,6 @@ distribution $p_U(k)$ of resources along component wealth $k$
  Notice that $p_U(k)$ is usually not made explicit in literature, but only
  the power-law distribution $p(k)$ of components
 with component wealth $k$.
-Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling).
-
 %In other words,
 %if there are $\alpha$ independent inputs,
 %i.e. resources in $\alpha$ dimensions,
@@ -436,7 +421,7 @@ This last corollary follows from box counting or, most easily,
 through wave-like reasoning about power laws,
 the excursion of the next section.
 
-\subsection{Phenomenological approach}\label{sec:phen}
+\subsection{Phenomenological approach: power laws are consistent with the assumptions}\label{sec:phen}
 % pure mathematical interpretation of the power law
 
 We shall also
@@ -455,7 +440,7 @@ suggests, sustains and deepen the theory presented in the last section.
 Both approaches pose a quasi-``if and only if''
 interpretation of power laws.
 
-Consider a constant speed $v$ for a wave propagation
+{\bf (1D case)} Consider a constant speed $v$ for a wave propagation
 (suppose linear media with no dispersion).
 Recall that the number of oscillations $f$ per unit time is
 inversely proportional to the cycle length $\lambda$ (the period).
@@ -469,7 +454,7 @@ being homogeneously distributed across
 component wealth $k$ and 
 resulting in $p(k)$ of such components.
 
-Now let $f=\frac{v=C}{\lambda_1 . \lambda_2}$, that is,
+{\bf (2D case and beyond)} Now let $f=\frac{v=C}{\lambda_1 . \lambda_2}$, that is,
 the frequency of occurrence
 (or the probability of choosing such event at random) go with the inverse of two periods while the speed is constant. 
 If $\lambda_1==\lambda_2==\lambda$, then $f=\frac{v}{\lambda^2}$.
@@ -490,9 +475,9 @@ $p(k_i)=\frac{C}{C_i}=\frac{C}{\lambda_{1,i}.\lambda_{2,i}}=
 Therefore one can consider that we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment uniformly across component wealth:
 higher component wealth implies less numerous components. 
 
-This interpretation might be misleading in the case of random variables
-and power-law distributions.
-In such cases, it is more coherent to assume random variables
+The cases above were related to phenomena represented by power laws.
+For power-law distributions involving random variables, we assume
+random variables
 $\lambda_{1,i}$ and $\lambda_{2,i}$ as presenting an uniform distribution of resources along component wealth
 themselves:
 $p_{\lambda_{1}}(\lambda_{1,i})=\frac{C_i}{\lambda_{1,i}^{\alpha_1}}$
@@ -515,20 +500,7 @@ If assumed $\lambda_{0,i} \propto \lambda_{3,i}$, than
 $p(k_{0,i}) \propto k_{0,i}^2$.
 
 
-All sorts of nonlinearities should account
-for many kinds of deviations in empirical power laws.
-Also,
-both wave and probabilistic interpretations
-suggest that further mathematical
-parallels might be useful in understanding complex
-systems, be it through thermodynamic, wave or quantum theories.
-One might glimpse diverse severe hypothesis,
-such as a lower bound for the energy involved in the integration of
-the components into a complex system and
-if such energy can account for part of the phenomena
-currently explained through dark matter assumptions.
-
-\section{Paradigmatic examples}\label{sec:par}
+\section{Paradigmatic observations of the propositions}\label{sec:par}
 \subsection{Object sizes in your house or elsewhere}\label{sec:siz}
 Pick your size (or the size of your hand, or your arm)
 as a measure unit $l$ for length, pick $m \in (0,1)$.
@@ -613,7 +585,7 @@ the fraction $p(k)$ of components (working groups) with component wealth $k$
 decrease with $k^3$ and distributes the same
 amount of resources $C=\frac{N.W.E}{k_R-k_L}$ along $k$.
 
-\section{Especial cases}\label{sec:esp}
+\section{Implications}\label{sec:esp}
 The consequences of the
 interpretation of power laws presented in Section~\ref{sec:form}
 are severe for understanding and dealing with
@@ -631,9 +603,9 @@ Assuming linearity of resources:
 
 \noindent where $C_1$ and $C_2$ are constants and $\overline{k}$ is
 the average degree, i.e. the mean of the number of edges attached to each vertex.
-Vertices accountability as direct resources to a network can be
-discarded by the example of a million node network without
-any edges as having no resources to build the network. Therefore:
+As in the literature, nodes can be disregarded, since if the nodes
+are not connected, they have minimized influence.
+Therefore:
 
 \begin{equation}\label{eq:eqf}
 	p_{E_i}(k_i)=\frac{C}{resources_i}=\frac{C}{C_2 E_i}=\frac{C/C_2}{N_i \frac{E_i}{N_i}}=\frac{2C/C_2}{N_i k_i} \equiv \frac{v}{\lambda_1   \lambda_2}
@@ -664,6 +636,12 @@ Consider a sound wave traveling with constant speed $v$.
 If the organism will consider wave lengths from $\lambda_1$
 to $\lambda_2$, $f=\frac{v}{\lambda} \in [\frac{v}{\lambda_2},\frac{v}{\lambda1}]$ follows
 a power law with $\alpha=1$.
+In any case, as made explicit by the discussion of
+Proposition~\ref{prop:2}, the power-law distribution
+maximizes component-wealth incident domain and,
+therefore, the reception of signals related to the existence
+of the system. In other words, power-law inequality
+maximized versatility.
 
 In either case, the persistence of power laws in perception
 suggests a pertinence, and is regarded as such by literature.
@@ -769,6 +747,40 @@ All other resources end correlated to these two.
 We also hypothesize that deviations from $\alpha \approx 2$ are due
 to other resources less correlated to them
 or to any other nonlinearities in the relationship of resources.
+
+\section{Discussion}
+Our model does not require the components to be ``self-interested''.
+This is often required in this context, and 
+we understand that the formalization presented here shed insight
+in the reasons why and the ways that self-interested agents
+organize themselves with extensive incidence of power laws.
+
+These principles can be thought of as laws met in
+a very broad class of phenomena.
+These propositions follow from the complexity of the system:
+there is so much involved, that the ignorance is assured and
+one needs to grasp hardly false assumptions.
+The resulting axioms can be viewed as statistical tendencies that
+hold with such universality that they can be seen as laws
+that govern phenomena ubiquitously.
+
+Deviations from $p(k)$ tend to be transient or require effort, the expenditure of energy (as work in needed to reduce entropy), or be imposed by harsh conditions (such as an apple that does not fall if stuck in the ceiling).
+
+All sorts of nonlinearities should account
+for many kinds of deviations in empirical power laws.
+Also,
+both wave and probabilistic interpretations
+suggest that further mathematical
+parallels might be useful in understanding complex
+systems, be it through thermodynamic, wave or quantum theories.
+One might glimpse diverse severe hypothesis,
+such as a lower bound for the energy involved in the integration of
+the components into a complex system and
+if such energy can account for part of the phenomena
+currently explained through dark matter assumptions.
+
+
+
 
 \section{Conclusions}
 The presented framework 
