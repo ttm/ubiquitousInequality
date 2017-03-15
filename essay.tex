@@ -46,6 +46,7 @@
 \usepackage[titletoc,title]{appendix}
 %\AtBeginDocument{\renewcommand\appendixname{New Name}}
 \usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage{mathpazo} % Use the Palatino font
 %\usepackage[T1]{fontenc} % Required for accented characters
 %\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
@@ -411,12 +412,18 @@ and
 $p_{\lambda_{2}}(\lambda_{2,i})=\frac{C_i}{\lambda_{2,i}^{\alpha_2}}$.
 The product distribution of
 $\lambda_{3,i}^2=\lambda_{1,i}.\lambda_{2,i}$
+% is then:
+% \begin{equation}\textstyle
+% p_{\lambda_3^2}(\lambda_{3,i}^2)=C_1.C_2.\lambda_3^{-2\alpha_2}\frac{(R_{1,R}-R_{1,L})^{\alpha_2-\alpha_1+1}}{\alpha_2-\alpha_1+1}
+% =C_1.C_2.\lambda_3^{-2\alpha_1}\frac{(R_{2,R}-R_{2,L})^{\alpha_1-\alpha_2+1}}{\alpha_1-\alpha_2+1}
+% \end{equation}
 is then:
-\begin{equation}\textstyle
-p_{\lambda_3^2}(\lambda_{3,i}^2)=C_1.C_2.\lambda_3^{-2\alpha_2}\frac{(R_{1,R}-R_{1,L})^{\alpha_2-\alpha_1+1}}{\alpha_2-\alpha_1+1}
-=C_1.C_2.\lambda_3^{-2\alpha_1}\frac{(R_{2,R}-R_{2,L})^{\alpha_1-\alpha_2+1}}{\alpha_1-\alpha_2+1}
-\end{equation}
-where $R_R$ and $R_L$ are the upper and lower limits of the corresponding resources in the system.
+\begin{align}
+	f_Z(z) = & \int_{-\infty}^{\infty} p_{\lambda_1}(\lambda_{1,i}) p_{\lambda_2}(\lambda_{3,i}^2/\lambda_{1,i})\frac{1}{|\lambda_{1,i}|}d\lambda_1 \\
+	= & \int_{-\infty}^{\infty} p_{\lambda_2}(\lambda_{2,i}) p_{\lambda_1}(\lambda_{3,i}^2/\lambda_{2,i})\frac{1}{|\lambda_{2,i}|}d\lambda_2
+\end{align}
+
+\noindent whose integrals have non-trivial limits.
 Note that $p_{\lambda_3^2}(\lambda_{3,i}^2)=\frac{N_i}{N}=p(\lambda_{x,i})$,
 where $p(\lambda_{x,i})$ is the probability that a component has component wealth $\lambda_{x,i}$ and $N_i$ is the number of such components. 
 % The number $N_i$ of components with component wealth $\lambda_{3,i}^2$ and the total
