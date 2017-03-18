@@ -1,0 +1,21 @@
+*) Meu número FAPESP é 2013/14262-7
+4) Para editores teremos que ver a lista.
+5) O pagamento será pedido depois da aceitação
+6) Comments para editorial office - seria complementar à cover letter,
+em que temos que enfatizar os pontos fortes do artigo e porque escolhemos
+uma revista de caráter geral.
+
+--------
+6) 
+The article presents an explanation for the pervasiveness of power laws.
+This issue is strikingly relevant for many knowledge domains,
+from social inequality and perception to biological and physical phenomena,
+given the ubiquity of power laws in empirical data.
+The model is posed in formal terms by means of propositions and corollaries.
+Paradigmatic incidences of the power laws are analyzed in terms of the model
+and the consequent inequality is observed both from desirable and non-desirable perspectives.
+We strived to keep all very simple, which we believe makes the contributions far compelling.
+
+The choice of Plos One for the publication of the article
+is based on the broad interest of the audience
+and on the online and free access.
