@@ -281,7 +281,7 @@ while implications for wealth distributions are considered separately in Section
 A case in which inequality is desirable is presented in Section~\ref{sec:meta}, which is followed by concluding remarks.
 
 
-\section*{Formalization}\label{sec:form}
+\section{Formalization}\label{sec:form}
 
 \begin{definition2}
 In a complex system the whole is more than the sum of the individual parts.
@@ -327,7 +327,7 @@ which is conveniently embedded in the notation.
 % Then, $p(k)$ is immediately understood as the frequency $f$.
 % Note that $k$ is a measure of the resources, not total resources (or total component wealth), which might be correlated to $k$ and have $k$ as one of the resources.
 
-\subsection*{Propositions and corollaries}\label{propCol}
+\subsection{Propositions and corollaries}\label{propCol}
 \setcounter{theorem}{-1}
 \begin{proposition}\label{prop:0}
 	There is diversity among the components of the resource-based system.
@@ -426,7 +426,7 @@ only for a (broad) portion of component wealth range.
 This follows from Corollary~\ref{cor:2}.
 
 \begin{corollary}
-	$N . p(1)$ provides another estimate of the amount of resources $C$ equally distributed along component wealth, where N is the number of components ($C\approx N . p(1)$).
+	$N . p(1)$ provides another estimate of the amount of resources $C$ equally distributed along component wealth, where N is the number of components with $k=1$ ($C\approx N . p(1)$).
 \end{corollary}
 
 \begin{corollary}
@@ -440,7 +440,7 @@ This follows from Corollary~\ref{cor:2}.
 This last corollary follows from box counting or, most easily,
 through wave-like reasoning about power laws, discussed in the next section.
 
-\subsection*{Phenomenological approach: power laws are consistent with the propositions}\label{sec:phen}
+\subsection{Phenomenological approach: power laws are consistent with the propositions}\label{sec:phen}
 % pure mathematical interpretation of the power law
 
 The propositions from the last subsection lead to power laws, and now we wish to verify whether phenomena governed by power laws are consistent with the propositions. In order to do that, we probe the definitions, propositions and corollaries from a more phenomenological standpoint, such as provided by empirical data. We take examples of 1D and 2D cases, and generalizations are straightforward.  
@@ -491,7 +491,7 @@ $\lambda_{3,i}^2=\lambda_{1,i}.\lambda_{2,i}$
 % \end{equation}
 is then:
 \begin{align}
-	f_Z(z) = & \int_{-\infty}^{\infty} p_{\lambda_1}(\lambda_{1,i}) p_{\lambda_2}(\lambda_{3,i}^2/\lambda_{1,i})\frac{1}{|\lambda_{1,i}|}d\lambda_1 \\
+	p_{\lambda_3^2}(\lambda_{3,i}^2) = & \int_{-\infty}^{\infty} p_{\lambda_1}(\lambda_{1,i}) p_{\lambda_2}(\lambda_{3,i}^2/\lambda_{1,i})\frac{1}{|\lambda_{1,i}|}d\lambda_1 \\
 	= & \int_{-\infty}^{\infty} p_{\lambda_2}(\lambda_{2,i}) p_{\lambda_1}(\lambda_{3,i}^2/\lambda_{2,i})\frac{1}{|\lambda_{2,i}|}d\lambda_2
 \end{align}
 
@@ -506,13 +506,13 @@ where $p(\lambda_{x,i})$ is the probability that a component has component wealt
 
 Together with the general model of Section~\ref{propCol}, this analysis amounts to a quasi-``if and only if'' mathematically grounded interpretation of any power-law relations.
 
-\subsection*{Introduction to an estimate of $\alpha$}
+\subsection{Introduction to an estimate of $\alpha$}
 Consider a generic problem in which a System ($S$) provides an Output ($O$) depending on the Input ($I$) it receives.
 The following assumptions are established:
 \begin{enumerate}
 	\item $S$ is made of a number of components that are not all equal among themselves.
 That is to say, there is diversity in the components, in accordance with Proposition~\ref{prop:0}. 
-\item Distribution of resources is uniform with regard to the ``size'' of the components (component wealth) as in the geometric isotropic case of your house.
+\item Distribution of resources is uniform with regard to the ``size'' of the components (component wealth) as in the geometric isotropic case of your house probed in Section~\ref{sec:siz}.
 This reflects Proposition~\ref{prop:2}
 \item There may be several inputs, but for each input the amount of resources furnished to the System can be considered the same 
 	in accordance with Corollary~\ref{prop:1}.
@@ -545,18 +545,18 @@ decreases with $C.k^3=n.w.e$, the component wealth with three dimensions.
 In other words,
 $p(k)=\frac{C}{k^3}$, that is,
 the fraction $p(k)$ of components (working groups) with component wealth $k$
-decrease with $k^3$ and distributes the same
+decreases with $k^3$ and distributes the same
 amount of resources $C=\frac{N.W.E}{k_R-k_L}$ along $k$.
 
 The Output has therefore a power-law dependence on $k$ with coefficient $\alpha$. Empirical values of $\alpha$
 are normally between $1.5$ and $3$, from which one infers that there are fundamentally between two and three types of independent inputs to both natural and artificial systems. This can be envisioned, for a factory $S$, through resources of employees and time, with the fundamental resource being $person . hour$, the canonical resource for industrial production since the rise of Taylorism and taken to extreme limits in Fordism~\cite{fordism}.
 
-\section*{Paradigmatic observations of the propositions}\label{sec:par}
+\section{Paradigmatic observations of the propositions}\label{sec:par}
 The interpretation of power laws presented in Section~\ref{sec:form} has an impact on the
 understanding of
 diverse phenomena. Selected cases are scrutinized in this section.
  
-\subsection*{Object sizes in a house}\label{sec:siz}
+\subsection{Object sizes in a house}\label{sec:siz}
 Pick the size of a person (or the size of his/her hand, or  arm)
 as a measure unit $l$ for length, pick $m \in (0,1)$.
 In a house, there probably are more objects
@@ -586,7 +586,7 @@ Extreme choices of $l$ and $m$ (and of $dl$ and $dm=mdl$ for tolerance in size)
 might exhibit spurious observations
 as the result of a bad fit of the scale for the analysis.
 
-\subsection*{Scale-free complex networks}
+\subsection{Scale-free complex networks}
 
 In a network, one has essentially $E$ edges and $N$ vertices.
 Assuming linearity of resources:
@@ -607,7 +607,7 @@ Therefore:
 % As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the fundamental resource,
 One can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$.
 This can be regarded as the case of social networks where the number of agents allocated $N_i$ and the time each of them put (related to $k_i$) are seen as the resource ($individuals . time$), and $\alpha\approx 2$
-as empirical evidenced~\cite{newman}.
+as empirically evidenced~\cite{newman}.
 
 % Also:
 % \begin{equation}\label{eq:eqf}
@@ -618,7 +618,7 @@ as empirical evidenced~\cite{newman}.
 % $\alpha=0.5$,
 % which is far from empirical evidence because it only captures the distribution of one of the resources with respect to $k_i$.
 
-\subsection*{Natural laws}
+\subsection{Natural laws}
 
 Power laws are very frequent in empirical data.
 This already grants its place in the study of natural phenomena.
@@ -657,9 +657,9 @@ input in any system: components and their time, energy or engagement.
 All other resources seem correlated to these two.
 We also hypothesize that deviations from $\alpha \approx 2$ are due
 to other resources less correlated to them
-or to any other nonlinearities in the relationship of resources.
+or to other nonlinearities in the relationship of resources.
 
-\section*{Implications for wealth distribution}\label{sec:esp}
+\section{Implications for wealth distribution}\label{sec:esp}
 
 One manifestation of inequality through power laws,
 which is most fundamental to daily experience
@@ -693,7 +693,7 @@ In other words, the richer the least rich,
 the richer the more rich. It seems paradoxical that power laws, which are the current utmost inequality paradigm, follow from an equitable consideration of resource inputs as in Proposition 1.
 
 
-\section*{When inequality is desirable: the case of sensors and meta-sensors}\label{sec:meta}
+\section{When inequality is desirable: the case of sensors and meta-sensors}\label{sec:meta}
 
 Inequality is generally associated with negative implications, but unequal distributions may serve important, noble purposes, as in the example about perception we present here for the sake of the argument.  
 Perception presents many psychophysical power-law relations between the magnitude of the physical stimulus and the perceived (subjective) quantity~\cite{pbook}. This can be attributed to the utility of perception, which is enhanced upon broadening of the spectrum of the perceived phenomenon. Another explanation is on the physical phenomena itself. Consider a sound wave traveling with constant speed $v$.
@@ -712,7 +712,7 @@ The higher the component wealth $k$ the higher the engagement,
 but the lesser diversity is brought to the group
 by the participant~\cite{tStable}: as one allocates more resources (say time) in one system, it allocates less resources in outside systems.
 
-\section*{Concluding Remarks}
+\section{Concluding Remarks}
 The model presented here is based on simple propositions, and does not require the system components to be ``self-interested'',
 unlike many other models leading to power laws (see a summary in~\cite{newmanpower,part}. Therefore, the formalization sheds light into in the reasons why and the ways that self-interested (and not self-interested) agents organize themselves with extensive incidence of power laws. The propositions in Section~\ref{propCol} can be thought of as laws met in a very broad class of phenomena and follow from the system complexity. Because there are so many mechanisms into play, we had to adopt assumptions that would be very unlikely to be false. The resulting axioms can be understood as statistical tendencies that hold with such universality that they can be seen as laws that govern phenomena ubiquitously. 
 Furthermore, the assumptions in the model lead to a framework analogous to the laws of thermodynamics:
@@ -726,6 +726,73 @@ Perhaps the most important implication of our findings is that inequality - impl
 Financial support was obtained from the United Nations Development Program (UNDP, contract 2013/00056, project BRA/12/018);
 the Brazilian National Counsel of Technological and Scientific Development (CNPq, process 140860/2013-4, project 870336/1997-5) and FAPESP (2013/14262-7).
 The authors thank the Brazilian General Secretariat of the Republic Presidency (SG-PR) and all labMacambira.sf.net members for pursuing this and other developments.
+
+\section*{Appendix: Power laws}
+% \numberwithin{equation}{section}
+\renewcommand\theequation{A\arabic{equation}}
+\setcounter{equation}{0}
+A power law is a functional relationship between two quantities $p(k)$ and $k$ in the form:
+\begin{equation}\label{eq:pow}
+p(k) = Ck^{-\alpha}
+\end{equation}
+\noindent where $k\in [k_L,k_R]$
+and $C$ is constant.
+There are four degrees of freedom in four characteristic variables:
+$\alpha$, $C$, $k_L$ and $k_R$.
+Suppose also $p(k)$ normalized so that
+$\int_{k_L}^{k_R}p(k)=1$, i.e.
+the power law is fit to represent a
+probability density function.
+Assuming idealized phenomena:
+\begin{equation}\label{eq:con}
+\int_{k_L}^{k_R}p(k)=1\;\Rightarrow\;
+C=\frac{1-\alpha}{k_R^{1-\alpha}-k_L^{1-\alpha}}
+\end{equation}
+
+The cumulative distribution function $P(k)$, median $m$, mean $\mu$ and variance $\sigma^2$ are:
+
+%\begin{equation}
+%\begin{aligned}\label{eq:md}
+\begin{align}\label{eq:md}
+	P(k) &=\int_{k_L}^k p(\tilde{k})d\tilde{k}=\frac{C}{1-\alpha}(k^{1-\alpha}-k_L^{1-\alpha})=
+	\frac{k^{1-\alpha}-k_L^{1-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\nonumber\\
+	&\left ( m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2} \right )\nonumber\\
+	m&=\sqrt[1-\alpha]{k_L^{1-\alpha}+\frac{1-\alpha}{2C}}=
+	\sqrt[1-\alpha]{k_R^{1-\alpha}-\frac{1-\alpha}{2C}}=
+	\sqrt[1-\alpha]{\frac{k_R^{1-\alpha}-k_L^{1-\alpha}}{2}}\\
+	\mu &= \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}=\left(\frac{1-\alpha}{2-\alpha}\right)\left(\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\right)\nonumber\\
+	\sigma^2 &= \left[ \int_{k_L}^{k_R}k^2p(k)dk=C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha} =\left(\frac{1-\alpha}{3-\alpha}\right)\left(\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{k_R^{1-\alpha}-k_L^{1-\alpha}}\right) \right] -\mu^2\nonumber
+%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
+%	R_n&=|m_n|\\
+%	\theta_\mu&=Arg(m_1) \nonumber \\
+%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
+\end{align}
+%\end{aligned}
+%\end{equation}
+
+Often, $k_R\rightarrow \infty$ which implies: $\alpha>1$ as a condition for convergence of $p(k)$ and for a finite median $m$. Also,
+the mean $\mu$ is finite only if $\alpha>2$, and the
+variance $\sigma^2$ is finite only when $\alpha>3$:
+
+\begin{align}\label{eq:md}
+	if \; k_R \rightarrow \infty \Rightarrow & & \nonumber\\
+											      & if\; \alpha>1 \;\Rightarrow	& C = &\; \frac{\alpha-1}{k_L^{1-\alpha}}\nonumber\\
+							   & & P(k) =& 1-\left(\frac{k_L}{k}\right)^{\alpha-1}\nonumber\\
+										       &  & m  = & \sqrt[1-\alpha]{\frac{\alpha-1}{2C}}&=&\;\;k_L.\sqrt[\alpha-1]{2}&\\
+							   & if\; \alpha>2 \;\Rightarrow	& \mu = & \;k_L^{2-\alpha}\frac{C}{\alpha-2}&= &\;\;k_L\frac{\alpha-1}{\alpha-2}& \nonumber\\
+							& if\; \alpha>3 \;\Rightarrow	& \sigma^2 = & \;k_L^{3-\alpha}\frac{C}{\alpha-3}-\mu^2&= &\;\;k_L^2\frac{\alpha-1}{(\alpha-3)(\alpha-2)^2}&\nonumber
+%	\mu = \int_{k_L}^{k_R}kp(k)dk=C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\nonumber\\
+%	\sigma^2  \int_{k_L}^{k_R}k^2p(k)dk -\mu^2 =C\;\frac{k_R^{3-\alpha}-k_L^{3-\alpha}}{3-\alpha}  -\left[C\;\frac{k_R^{2-\alpha}-k_L^{2-\alpha}}{2-\alpha}\right]^2\\
+%	m : \int_{k_L}^{m}p(k)dk=\int_{m}^{k_R}p(k)dk=\frac{1}{2}
+%	m_n&=\frac{1}{N}\sum_{i=1}^N z_i^n \nonumber\\
+%	R_n&=|m_n|\\
+%	\theta_\mu&=Arg(m_1) \nonumber \\
+%	\theta_\mu'&=\frac{T}{2\pi} \theta_\mu \nonumber
+\end{align}
+
+
+
+
 
 \nolinenumbers
 
