@@ -89,7 +89,10 @@ para:
 Because there are so many mechanisms into play, we have to adopt
 assumptions that are very unlikely to be false.
 
+*) O número FAPESP seu pode ser qualificado como convênio ou?
+Em inglês qual termo posso usar?
 
-*) Tentar resolver a integral da distribuição do produto
+*) Tentar resolver a integral da distribuição do produto,
+ou melhorar o texto a ela relacionado?
 
 
