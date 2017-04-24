@@ -1,6 +1,6 @@
-= Notes on the reviews from PloS One =
+# Notes on the reviews from PloS One
 
-== Email for the journal ==
+## Email for the journal
 Dear Plos One Editors and Reviewers,
 
 Thank you very much for considering the article.
@@ -20,15 +20,15 @@ Bellow are notes about each reviewer's comments.
 Yours sincerely,
 Renato Fabbri and Osvaldo N. Oliveira Jr.
 
-== Reviewer #1 ==
+## Reviewer #1
 The title of the paper is A simple model that explains why inequality is ubiquitous and it is emphasized that the main topic is inequality in the wealth distribution. Indeed, there is a large literature in statistical physics about this topic. However, the authors do not cite a single paper about that, and the general impression is that they do not known this literature. There is no discussion between their results and other research. Also, the paper is permeated by affirmations without basis, for example ""Both deviations of power laws towards a more equitable or towards a more unequitable distribution should be ephemeral or require work." This affirmation is not in accord with results from Econophysics, where the Pareto exponent alpha can change to mor equitable values by natural changes of the models. More problematic is the tentative of subsume statistical power laws and geometrical or simple physics power laws within the same formalism. Geometrical and physical power laws like density = M/L^3, f = v/lambda (or v = lambda/T) are simple definitions. The exponent alpha = 2 in Newton gravity law (and Coulomb's law) occur because the particles that mediate such forces are massless (for another forces mediated by massive particles, the law is exponential, not power law). That is, all these power laws are or definitions or well understood phenomena that do not require explanation. And certainly, power laws such Zipf law for words and econophysics power laws have a limited range of validity. For example, econophysics data show that the Pareto power law is valid only for the 3% richer, the middle class and the poor are best described by a Boltzmann distribution. The fact that the authors are not aware about this shows that the paper disregarded the previous literature. As it is, I can not recommend the publication of the paper.
 
-=== Notes ===
+### Notes
 Maybe emphasize that we are not concerned with human wealth inequality only, but that it is one important aspect.
 Don't know about the massless mediation of gravity and Coulomb's law. Maybe state that we are giving a more general and simple explanation.
 Maybe add about these aspects and the Boltzmann distribution on the paper.
 
-== Reviewer #2==
+## Reviewer #2
 Review of “A simple model that explains why inequality is ubiquitous”, by Renato Fabbri and Osvaldo Oliveira Jr.
 
 The problems with this article starts when trying to read the abstract: the authors state that the model is based in two assumptions, but in the description one verifies that they actually include two second assumptions: “The second assumption is a uniform distribution of resources for individual components” and a few lines below, “The second assumption is a conservation law: energy is conserved through component wealth.” Why energy in an economic model? What is component wealth? Following this, one finds phrases like this one: “Applying these assumptions to a generic system results in a power-law distribution, whose coefficient is the number of inputs that are independent from each other, i.e. the dimensionality of the allocated resources.”
@@ -41,7 +41,7 @@ Finally, it is not clear for me if there is a model in the article. If there is 
 
 For all these reasons, I think the article does not deserve publication.
 
-=== Notes ===
+### Notes
 There are only two assumptions, the second statement is about the second assumption.
 We are not considering only economic systems, the model is proposed to be as general as possible.
 Component wealth is the amount of resources allocated to the component.
@@ -50,7 +50,7 @@ We might further check and then cite the resources pointed by the reviewer.
 The model is clearly stated in section 1.
 
 
-== Reviewer #3 ==
+## Reviewer #3
 I don't feel the paper at all manage to being to answer the question raised in the title. The pap er doesn't contain any model but only a number of unclear and badly presented or argued propositions. Of course the question why inequality appears is a very serious one and a simple model would be interesting. I agree with the wikipedia of a mathematical model:
 "Mathematical models can take many forms, including dynamical systems, statistical models, differential equations, or game theoretic models. These and other types of models can overlap, with a given model involving a variety of abstract structures. In general, mathematical models may include logical models. In many cases, the quality of a scientific field depends on how well the mathematical models developed on the theoretical side agree with results of repeatable experiments. Lack of agreement between theoretical mathematical models and experimental measurements often leads to important advances as better theories are developed."
 (https://en.wikipedia.org/wiki/Mathematical_model) The paper doesn't contain anyhting like this.
@@ -74,7 +74,7 @@ line 89. Sounds very strange. The more wealth, the more resources one can purcha
 
 line 217. I think you try to do too many thing at a too abstract level. How does this relate to, say, gravity and 1/r^2?
 
-=== Notes ===
+### Notes
 Can we make the propositions better presented and argued?
 Should we strive to make the exposition more in accordance to what Wikipedia describes as a mathematical model?
 SOC is about dynamical systems. Our model is more general.
@@ -84,11 +84,11 @@ Maybe give examples of what the "more than" is: like birds flying in a triangle 
 Changed wave cycles for wave periods.
 In the case of oil and coal, the resources are considered of the same type.
 
-== Outras potenciais melhoras ==
-*) incluir uma discussão sobre trabalhos relacionados,
+## Outras potenciais melhoras
+* Incluir uma discussão sobre trabalhos relacionados,
 mesmo que bem breve como uma lista em que cada item
 cita uma teoria.
-*) Inclusão de algumas referências a mais.
+* Inclusão de algumas referências a mais.
 No mais, sinto falta de um pouco mais de consistência
 na nossa exposição, como parece ser o caso dos revisores.
 Talvez também associar a teoria com princípios físicos
