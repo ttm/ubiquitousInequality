@@ -56,6 +56,19 @@ Maybe give examples of what the "more than" is: like birds flying in a triangle 
 Changed wave cycles for wave periods.
 In the case of oil and coal, the resources are considered of the same type.
 
+------------
+Outras potenciais melhoras:
+*) incluir uma discussão sobre trabalhos relacionados,
+mesmo que bem breve como uma lista em que cada item
+cita uma teoria.
+*) Inclusão de algumas referências a mais.
+No mais, sinto falta de um pouco mais de consistência
+na nossa exposição, como parece ser o caso dos revisores.
+Talvez também associar a teoria com princípios físicos
+bastante gerais, como de ação estacionária.
+Não me parece difícil obter uma equação (a Lagrangiana)
+que seria minimizada no caso desta maximização do âmbito de recursos/componente
+na distribuição de recursos 
 ----------------------
 Dear Plos One Editors and Reviewers,
 
