@@ -27,6 +27,11 @@ The title of the paper is A simple model that explains why inequality is ubiquit
 Maybe emphasize that we are not concerned with human wealth inequality only, but that it is one important aspect.
 Don't know about the massless mediation of gravity and Coulomb's law. Maybe state that we are giving a more general and simple explanation.
 Maybe add about these aspects and the Boltzmann distribution on the paper.
+Add a discussion between our results and other research.
+Procurar sobre leis regidas por exponencial e relacionar.
+De qualquer forma, não é qualquer fenômeno ou forma de observação numérica
+que gera power law e várias outras distribuições são observadas.
+Talvez incluir discussão com isso no artigo.
 
 ## Reviewer #2
 Review of “A simple model that explains why inequality is ubiquitous”, by Renato Fabbri and Osvaldo Oliveira Jr.
@@ -49,6 +54,13 @@ We replaced "coefficient" with "exponent" in the article.
 We might further check and then cite the resources pointed by the reviewer.
 The model is clearly stated in section 1.
 
+Add section with "interactions between agents".
+Add a "clear description of the model" in one or two sentences.
+
+Fazer figura com distribuição equanime de recursos
+e embaixo a exponencial resultante.
+Implementar a tranformação de amostras de uma distribuição
+uniforme para a lei de potência e explicitar as equações.
 
 ## Reviewer #3
 I don't feel the paper at all manage to being to answer the question raised in the title. The pap er doesn't contain any model but only a number of unclear and badly presented or argued propositions. Of course the question why inequality appears is a very serious one and a simple model would be interesting. I agree with the wikipedia of a mathematical model:
@@ -69,6 +81,10 @@ line 55 I think you want to explain diversity (in the form of inequality) so it 
 line 59. Obviously not the case in general. But perhaps an interesting assumption in order to highlight inequality generating mechanisms.
 
 line 74. But if the resources are oil and coal, then need to use addition.
+
+### Notes
+Oil and coal are the same dimension on the model. Thats why they add, not multiply.
+Add this in the article.
 
 line 89. Sounds very strange. The more wealth, the more resources one can purchase.
 
@@ -96,3 +112,4 @@ bastante gerais, como de ação estacionária.
 Não me parece difícil obter uma equação (a Lagrangiana)
 que seria minimizada no caso desta maximização do âmbito de recursos/componente
 na distribuição de recursos 
+* Expor nitidamente que dy(x)/dx = C => y = Cx ~ y = C z^alpha
