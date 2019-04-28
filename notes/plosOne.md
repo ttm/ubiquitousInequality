@@ -37,7 +37,7 @@ Talvez incluir discussão com isso no artigo.
   * emphasize that we are not only concerned with wealth inequality
   * mention Boltzmann distribution for middle and poor classes
   * add discussion about our results and other research
-  * relate to exponential laws
+  * relate to exponential laws?
 
 ## Reviewer #2
 Review of “A simple model that explains why inequality is ubiquitous”, by Renato Fabbri and Osvaldo Oliveira Jr.
