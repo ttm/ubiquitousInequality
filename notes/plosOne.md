@@ -33,14 +33,24 @@ De qualquer forma, não é qualquer fenômeno ou forma de observação numérica
 que gera power law e várias outras distribuições são observadas.
 Talvez incluir discussão com isso no artigo.
 
+- :::
+  * emphasize that we are not only concerned with wealth inequality
+  * mention Boltzmann distribution for middle and poor classes
+  * add discussion about our results and other research
+  * relate to exponential laws
+
 ## Reviewer #2
 Review of “A simple model that explains why inequality is ubiquitous”, by Renato Fabbri and Osvaldo Oliveira Jr.
 
-The problems with this article starts when trying to read the abstract: the authors state that the model is based in two assumptions, but in the description one verifies that they actually include two second assumptions: “The second assumption is a uniform distribution of resources for individual components” and a few lines below, “The second assumption is a conservation law: energy is conserved through component wealth.” Why energy in an economic model? What is component wealth? Following this, one finds phrases like this one: “Applying these assumptions to a generic system results in a power-law distribution, whose coefficient is the number of inputs that are independent from each other, i.e. the dimensionality of the allocated resources.”
+The problems with this article starts when trying to read the abstract: the authors state that the model is based in two assumptions, but in the description one verifies that they actually include two second assumptions: “The second assumption is a uniform distribution of resources for individual components” and a few lines below, “The second assumption is a conservation law: energy is conserved through component wealth.”
+  - Why energy in an economic model? What is component wealth?
+  Following this, one finds phrases like this one: “Applying these assumptions to a generic system results in a power-law distribution, whose coefficient is the number of inputs that are independent from each other, i.e. the dimensionality of the allocated resources.”
 
-It is not so easy to obtain a power law from these assumptions, it is not clear what is the model that follow these assumptions and it is not clear what is the “coefficient of the power law”, is it the exponent?
+It is not so easy to obtain a power law from these assumptions, it is not clear what is the model that follow these assumptions and it is not clear what is 
+  - the “coefficient of the power law”, is it the exponent?
 
-The authors should also check a big number of publications in the subject of wealth distribution and inequalities that they ignore in the references, like the articles by Bouchaud and Mezard, Dragulescu and Yakovenko, the papers and book by Slanina, papers by Chaterjee, Chakraborti, Sinha, from India, Moukarzel from México, Pianegonda, Iglesias from Brazil, etc. For a more detailed list of references, even incomplete, the authors can check this review: https://link.springer.com/chapter/10.1007/978-3-319-12328-8_4
+The authors should also check a big number of publications in the subject of wealth distribution and inequalities that they ignore in the references, like the 
+  - articles by Bouchaud and Mezard, Dragulescu and Yakovenko, the papers and book by Slanina, papers by Chaterjee, Chakraborti, Sinha, from India, Moukarzel from México, Pianegonda, Iglesias from Brazil, etc. For a more detailed list of references, even incomplete, the authors can check this review: https://link.springer.com/chapter/10.1007/978-3-319-12328-8_4
 
 Finally, it is not clear for me if there is a model in the article. If there is one, it should be clearly described, including interactions between agents.
 
@@ -49,16 +59,15 @@ For all these reasons, I think the article does not deserve publication.
 ### Notes
 There are only two assumptions, the second statement is about the second assumption.
 We are not considering only economic systems, the model is proposed to be as general as possible.
-Component wealth is the amount of resources allocated to the component.
-We replaced "coefficient" with "exponent" in the article.
+  - Component wealth is the amount of resources allocated to the component.
+  - We replaced "coefficient" with "exponent" in the article.
 We might further check and then cite the resources pointed by the reviewer.
 The model is clearly stated in section 1.
 
 Add section with "interactions between agents".
 Add a "clear description of the model" in one or two sentences.
 
-Fazer figura com distribuição equanime de recursos
-e embaixo a exponencial resultante.
+  - Fazer figura com distribuição equanime de recursos e embaixo a exponencial resultante.
 Implementar a tranformação de amostras de uma distribuição
 uniforme para a lei de potência e explicitar as equações.
 
@@ -68,36 +77,41 @@ I don't feel the paper at all manage to being to answer the question raised in t
 (https://en.wikipedia.org/wiki/Mathematical_model) The paper doesn't contain anyhting like this.
 
 Here are a number of commnets that express my bewilderment and concern.
-Line 19 - Wha about SOC. I know the paper mention Ref. 2 but that isn't really enough to justify the statement that no unified framework is found in the literature.
+- Line 19 - Wha about SOC. I know the paper mention Ref. 2 but that isn't really enough to justify the statement that no unified framework is found in the literature.
 
 line 22 - "|We demonstrate that the extreme inequality of power laws results from a uniform distribution with respect to the resources allocated to each component." The value of this kind of "demonstration" is very questionable. No concrete examples pointing to mechanisms is given. The results essentially a consequence of some verbale circular arguments
 
-line 30. This quote is from Aristotle. It is of course OK to reference Aristotle, but then include a ref. and it doesn't make Def. 1 particularly new. And of course it is unclear what exactly is meant by "more than" - in what sense. This is the problem of "emergence" central to the theory of complex systems and not just a simple fact one can take for given.
+- line 30. This quote is from Aristotle. It is of course OK to reference Aristotle, but then include a ref. and it doesn't make Def. 1 particularly new. And of course it is unclear what exactly is meant by "more than" - in what sense. This is the problem of "emergence" central to the theory of complex systems and not just a simple fact one can take for given.
 
-line 39 What are "wave cycles"??
+- line 39 What are "wave cycles"??
+  * cycles/periods
 
 line 55 I think you want to explain diversity (in the form of inequality) so it is not a good idea to state that it is simply a deep truth.
 
 line 59. Obviously not the case in general. But perhaps an interesting assumption in order to highlight inequality generating mechanisms.
 
 line 74. But if the resources are oil and coal, then need to use addition.
+  - state that they mingle into one resource
 
 ### Notes
-Oil and coal are the same dimension on the model. Thats why they add, not multiply.
+- Oil and coal are the same dimension on the model. Thats why they add, not multiply.
 Add this in the article.
 
 line 89. Sounds very strange. The more wealth, the more resources one can purchase.
 
 line 217. I think you try to do too many thing at a too abstract level. How does this relate to, say, gravity and 1/r^2?
+- yes.
+
+- maybe mention 3 equanimous aspects of scale-free networks
 
 ### Notes
 Can we make the propositions better presented and argued?
 Should we strive to make the exposition more in accordance to what Wikipedia describes as a mathematical model?
 SOC is about dynamical systems. Our model is more general.
-Maybe change "demonstrate" to "argue". Maybe present clearly that p(k)/k^\alpha = C is what we are considering to be the natural law.
+- Maybe change "demonstrate" to "argue". Maybe present clearly that p(k)/k^\alpha = C is what we are considering to be the natural law. OK
 Find where Aristotle said it and cite on the paper? Anyway, we are not using Aristotle, but the complex system theory.
-Maybe give examples of what the "more than" is: like birds flying in a triangle where not triangle is given by any individual bird.
-Changed wave cycles for wave periods.
+- Maybe give examples of what the "more than" is: like birds flying in a triangle where not triangle is given by any individual bird.
+- Changed wave cycles for wave periods.
 In the case of oil and coal, the resources are considered of the same type.
 
 ## Outras potenciais melhoras
