@@ -2,7 +2,6 @@ import pylab as p, numpy as n
 
 fig=p.figure(figsize=(6.,5.))
 # p.subplots_adjust(left=0.09,bottom=0.15,right=0.95,top=0.81)
-p.subplots_adjust(left=0.07, bottom=0.05, right=0.97, top=0.83, hspace=0.78)
 
 N = 100.
 y = n.ones(int(N))
@@ -28,7 +27,9 @@ p.plot(yy)
 
 p.text(25, 1.4, r'$\Downarrow\;\;p(k) . k^\alpha = C\;\;\Downarrow$', fontsize=18)
 
-p.gcf().suptitle('From uniform to power-law', fontsize=22)
+# p.gcf().suptitle('From uniform to power-law', fontsize=22)
+# p.subplots_adjust(left=0.07, bottom=0.05, right=0.97, top=0.83, hspace=0.78)
+p.subplots_adjust(left=0.07, bottom=0.05, right=0.97, top=0.93, hspace=0.78)
 
 p.savefig("./uni2power.png")
 # p.show()
