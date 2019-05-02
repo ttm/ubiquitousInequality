@@ -480,10 +480,10 @@ and assume linearity $\lambda_{1,i}=c.\lambda_{2,i}$
 such that
 $p(k_i)=\frac{C}{C_i}=\frac{C}{\lambda_{1,i}.\lambda_{2,i}}=
 \frac{C}{c\lambda_{2,i}^2}=\frac{\widetilde{C}}{\lambda_{2,i}^2}\equiv\frac{v}{\lambda^2}$.
-Therefore, we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated by the environment uniformly across component wealth: higher component wealth implies less numerous components. 
+Therefore, we only access $\lambda_1==\lambda_2$ and a ``normalized resource C'' allocated uniformly by the environment across component wealth: higher component wealth implies less numerous components. 
 
 The cases above were related to phenomena represented by power laws.
-For power-law distributions involving random variables, we assume
+For power-law distributions involving random variables, assume
 random variables
 $\lambda_{1,i}$ and $\lambda_{2,i}$ as possessing a uniform distribution of resources along component wealth
 themselves:
@@ -516,20 +516,20 @@ Together with the general model of Section~\ref{propCol}, this analysis amounts 
 
 \subsection{Introduction to an estimate of $\alpha$}
 Consider a generic problem in which a System ($S$) provides an Output ($O$) depending on the Input ($I$) it receives.
-The following assumptions are established:
+Admit the following assumptions:
 \begin{enumerate}
 	\item $S$ is made of a number of components that are not all equal among themselves.
 That is to say, there is diversity in the components, in accordance with Proposition~\ref{prop:0}. 
-\item Distribution of resources is uniform with regard to the ``size'' of the components (component wealth) as in the geometric isotropic case of a house to be discussed in Section~\ref{sec:siz}.
+\item Distribution of resources is uniform with respect to the ``size'' of the components (component wealth) as in the geometric isotropic case of a house to be discussed in Section~\ref{sec:siz}.
 This reflects Proposition~\ref{prop:2}
-\item There may be several inputs, but for each input the amount of resources furnished to the System can be considered the same 
+\item There may be several inputs, but for each input the amount of resources furnished to the System can be considered the same, 
 	in accordance with Corollary~\ref{prop:1}.
 \end{enumerate}
 
 The Output ($O$)
 is assumed to be the performance (or richness) in terms of the components of $S$.
 If there are $\alpha$ types of independent inputs, i.e. resources in $\alpha$ dimensions,
-the Output is the product of these functions and should be
+the Output is the product of these inputs and should be
 %O = (R1*R2*… RN)/tN since a given input can be written as Ri/t. 
 $O =C.k^{-\alpha}$, where $k$ is a one-dimensional component wealth observation,
 as shown in Section~\ref{sec:phen}. 
@@ -586,10 +586,10 @@ In a house, there probably are more objects
 of volume $\approx (m.l)^3$ 
 than those of volume $\approx l^3$.
 Furthermore, as we know nothing about the house,
-we can assume that the chance $\rho$ of finding an object
-fitting an arbitrary cube of volume $\approx (m.l)^3$
+we may assume that the chance $\rho$ of finding an object
+within an arbitrary cube of volume $\approx (m.l)^3 \pm \beta(ml)$
 is the same as finding an object fitting an
-arbitrary cube of volume of volume $\approx l^3$.
+arbitrary cube of volume $\approx l^3 \pm \beta(l)$ for $\beta \in [0,1]$.
 The house has a fixed volume so there are $m^{-3}$ more of
 the smaller cubes and therefore $m^{-3}$ more objects of such
 volume. 
@@ -605,7 +605,7 @@ interpretation of the formalism presented in the previous section.
 It also might be assumed true even if there is no isotropy
 and can be considered a ``best guess'' if total ignorance
 about the system is assumed. 
-Extreme choices of $l$ and $m$ (and of $dl$ and $dm=mdl$ for tolerance in size)
+Extreme choices of $l$ and $m$
 might exhibit spurious observations
 as the result of a bad fit of the scale for the analysis.
 
@@ -619,16 +619,14 @@ Assuming linearity of resources:
 
 \noindent where $C_1$ and $C_2$ are constants and $\overline{k}$ is
 the average degree, i.e. the mean of the number of edges attached to each vertex.
-As in the complex networks literature, nodes can be disregarded, since if the nodes
-are not connected, they have minimized influence.
-Therefore:
+If the nodes are not connected, they have minimized influence, also $N \ll E$ in most cases, thus the $C_1 N$ term is ignored.
+Then:
 
 \begin{equation}\label{eq:eqf}
 	p_{E_i}(k_i)=\frac{C}{resources_i}=\frac{C}{C_2 E_i}=\frac{C/C_2}{N_i \frac{E_i}{N_i}}=\frac{2C/C_2}{N_i k_i} \equiv \frac{v}{\lambda_1   \lambda_2}
 \end{equation}
 
 % As $N_i$ and $k_i$ are both directly proportional to $E_i$, which is the fundamental resource,
-One can factor out another constant and consider the special case where $\lambda=\lambda_1=\lambda_2$ and, consequently, $f=v/\lambda^2$.
 This can be regarded as the case of social networks where the number of agents allocated $N_i$ and the time each of them put (related to $k_i$) are seen as the resource ($individuals . time$), and $\alpha\approx 2$
 according to empirical evidence~\cite{newman}.
 
@@ -643,12 +641,12 @@ according to empirical evidence~\cite{newman}.
 
 \subsection{Natural laws}
 
-Power laws are very frequent in empirical data.
+Power laws are very recurrent in empirical data.
 This already grants its place in the study of natural phenomena.
 Different explanations are given for the many cases where
 they are found, with most common denominators being fields such as
 fractals, chaos, networks and unifying models e.g. as given by the Theory of Self-Organized Criticality~\cite{part}.
-Cases in more traditional fields, such as Newtonian mechanics, where gravitational force relates to distance with $\alpha=2$ (if masses are fixed), are usually not mentioned in specialized literature.
+Cases in more traditional fields, such as Newtonian mechanics, where gravitational force relates to distance with $\alpha=2$ (if masses are fixed), are usually not mentioned in specialized literature about power laws, but regarded as very special phenomena e.g. related to mediation by massless particles.
 In other words: there seems not to be a unifying theory of why power laws express such
 an ubiquitous spectrum of relationships.
 
@@ -662,18 +660,18 @@ the power law relation can be regarded as an equitable distribution
 of resources in $\alpha$ dimensions.
 If the acting of the ``laws'' given by Propositions~\ref{prop:0} and~\ref{prop:2} is fundamentally what is taking place, that should depend on phenomena
 and standpoint.
-We advocate that this framework deepens the understanding of potentially all power law
+We advocate that this framework deepens the understanding of potentially all power-law
 incidences and is usually consonant with more explicit and intuitive 
 relations of the system, its components and the context.
 The core meaning seems to emanate, with the simplest formalism, from
-the object sizes in the isotropic space shown in Section~\ref{sec:siz}.
+the object sizes in the isotropic space described in Section~\ref{sec:siz}.
 That is a reasonable geometric abstraction for
-one to grasp the power law inequality originated from
+one to grasp the power-law inequality originated from
 a uniform distribution
 of fundamental resources through component wealth.
 Also, relating power laws to the environment is the most effective
 way we found to make explicit both the axiomatic
-and the phenomenological backbones of power law ubiquity described in
+and the phenomenological backbones of the power-law ubiquity described in
 Section~\ref{sec:form}.
 We hypothesize that $\alpha \approx 2$ is due to two basic resources
 input in any system: components and their time, energy or engagement.
@@ -692,7 +690,7 @@ usually advocating ways to minimize ``social inequality''.
 Considering the framework presented within this article:
 
 \begin{itemize}
-	\item Such inequality is a natural tendency that follows from Propositions~\ref{prop:0} and~\ref{prop:2} and in accordance with the phenomenological discussion of Section~\ref{sec:phen}.
+	\item such inequality is a natural tendency that follows from Propositions~\ref{prop:0} and~\ref{prop:2} and is in accordance with the phenomenological discussion of Section~\ref{sec:phen}.
 	\item Deviations from a power-law distribution of wealth should require work.
 		Occasional deviations are part of the statistical aspect of the phenomena involved, but the maintenance of a pattern different from the power law derived from the resources distribution are fated to require the expenditure of energy.
 	\item Both deviations of power laws towards a more equitable or towards a more unequitable distribution should be ephemeral or require work.
@@ -707,13 +705,14 @@ Additionally, publicized data should be regarded with
 extra care and skepticism, as they do not always present the
 expected power-law distributions.
 
-In summary, power-law inequality seems to be a ubiquitous tendency
+In summary, power-law inequality seems to be an ubiquitous tendency
 and a consequence of a distribution of wealth equitable and insensitive along wealth allocated to each component.
 This implies the necessity of ``work'' for equalization.
 Also, we observe that the higher the $k_L$ of equation~\ref{eq:pow}, the higher all the probabilistic mass will be located, which
 implies greater wealth of the wealthier, the hubs or the ``elite''.
 In other words, the richer the least rich,
-the richer the more rich. It seems paradoxical that power laws, which are the current utmost inequality paradigm, follow from an equitable consideration of resource inputs as in Proposition 1.
+the richer the more rich.
+% It seems paradoxical that power laws, which are the current utmost inequality paradigm, follow from an equitable consideration of resource inputs as in Proposition 1.
 
 
 \section{When inequality is desirable: the case of sensors and meta-sensors}\label{sec:meta}
@@ -727,11 +726,11 @@ therefore, the reception of signals.
 In other words, the power-law inequality
 maximizes versatility.
 
-The existence of power laws in perception (and other sensing mechanisms) is advantageous, as acknowledged in the literature~\cite{psycho}. One may thus wonder whether complex systems with power law behavior could be regarded as useful meta-sensors. By way of illustration, let us consider an interest group for hiking, which can be understood as a meta-sensor to find suitable 
+The existence of power laws in perception (and other sensing mechanisms) is advantageous, as acknowledged in the literature~\cite{psycho}. One may thus wonder whether complex systems with power-law behavior could be regarded as useful meta-sensors. By way of illustration, let us consider an interest group about hiking, which can be understood as a meta-sensor to find suitable 
 places, equipment, people, proper behavior, etc.
 The power law, i.e. ``the scale-free outline'' to use
 the complex network jargon, sweeps a wide range of engagements (regarding the concentration of resources).
-The higher the component wealth $k$ the higher the engagement,
+The higher the component wealth $k$, the higher the engagement,
 but the lesser diversity is brought to the group
 by the participant~\cite{tStable}: as one allocates more resources (say time) in one system, it allocates less resources in outside systems.
 
@@ -743,7 +742,7 @@ conservation of resources and a time arrow pointing to inequality.
 
 It is also worth emphasizing that physical laws expressed in the form of power laws and phenomena involving power-law distributions were treated on an equal footing. It remains to be seen whether such universality will be kept when specific problems are addressed. Still with regard to generality, if a complex system behaves according to the model proposed, then its energy will be related to the constant C of equation~\ref{eq:pow} for the distribution. Though we have not in any way treated the physical phenomena in complex systems in detail, one may speculate that if the Universe is composed of systems behaving as described in our model it might be possible to use the power-law concepts to seek for an explanation of dark matter or dark energy. 
 
-Perhaps the most important implication of our findings is that inequality - implicit in power law behavior - is a natural tendency for diverse natural and human phenomena. Of course, there are many deviations from power laws caused by nonlinearities. But in the overwhelming number of systems obeying power laws, deviations tend to be transient or require effort. We hypothesize that inequality may be minimizable by the expenditure of energy and that the characteristic $\alpha \in [2,3]$ is a consequence of the existence of two or three types of independent resources. Further work should link these findings to individual fields and contextualize the general framework.
+Perhaps the most important implication of our findings is that inequality - implicit in power-law behavior - is a natural tendency for diverse natural and human phenomena. Of course, there are many deviations from power laws caused by nonlinearities. But in the overwhelming number of systems obeying power laws, deviations tend to be transient or require effort. We hypothesize that inequality may be minimizable by the expenditure of energy and that the characteristic $\alpha \in [2,3]$ is a consequence of the existence of two or three types of independent resources. Further work should link these findings to individual fields and contextualize the general framework.
 
 \subsection*{Acknowledgments}
 Financial support was obtained from the United Nations Development Program (UNDP, contract 2013/00056, project BRA/12/018);
@@ -793,7 +792,7 @@ The cumulative distribution function $P(k)$, median $m$, mean $\mu$ and variance
 %\end{aligned}
 %\end{equation}
 
-Often, $k_R\rightarrow \infty$ which implies:
+Often, $k_R\rightarrow \infty$, $\therefore$
 
 \begin{align}\label{eq:md}
 	if \; k_R \rightarrow \infty \Rightarrow & & \nonumber\\
