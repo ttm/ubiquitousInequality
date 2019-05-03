@@ -1,3 +1,13 @@
+sex mai  3 01:23:14 -03 2019
+novo envio.
+*) Keywords:
+complex systems, power laws, power-law distribution, inequality, complex networks, scale-free networks
+
+
+
+
+==================
+
 *) Meu número FAPESP é 2013/14262-7
 4) Para editores teremos que ver a lista.
 5) O pagamento será pedido depois da aceitação
@@ -17,11 +27,13 @@ given the ubiquity of power laws in empirical data.
 The model is posed in formal terms by means of propositions and corollaries.
 Paradigmatic incidences of the power laws are analyzed in terms of the model
 and the consequent inequality is observed both from desirable and non-desirable perspectives.
-We strived to keep all very simple, which we believe makes the contributions far compelling.
+We strove to keep all very simple, which we believe makes the contributions far compelling.
 
-The choice of Plos One for the publication of the article
+The choice of PLOS One for the publication of the article
 is based on the broad interest of the audience
 and on the online and free access.
+
+The document has been enhanced and is being resubmitted, as described in the Cover Letter.
 
 -----------
 
